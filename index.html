@@ -27,11 +27,21 @@
     <meta name="msapplication-TileImage" content="img/icon.png">
     <meta name="msapplication-TileColor" content="#F77F00">
 </head>
-<body>
+<body oninput="valor();" onmousemove="valor();" onload="valor();">
+<form name="pegar">
 <div id="Layer1">
 <div id="Layer1_Container">
-<iframe src="http://www.facebook.com"></iframe>
+<input type="number" id="Editbox1" name="Editbox1" value="" placeholder="Ex 1080">
+<input type="button" id="Editbox2" name="Editbox2" value="" placeholder="%" onmousemove="sobe();">
+<div id="wb_Heading1">
+<h1 id="Heading1" onclick="sobre();">Sobre</h1></div>
 </div>
 </div>
+<div id="Layer2">
+<div id="Layer2_Container">
+<input type="button" id="Editbox3" name="Editbox3" value="" readonly placeholder="" style="text-align: right;">
+</div>
+</div>
+</form>
 </body>
 </html>
