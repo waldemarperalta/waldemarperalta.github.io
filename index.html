@@ -1,14 +1,38 @@
+<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>Percent</title>
+<title>Percent %</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="css/Percent_pjct.css" rel="stylesheet">
+<link href="cupertino/jquery-ui.min.css" rel="stylesheet">
+<link href="css/waldemarperalta.github.io.css" rel="stylesheet">
 <link href="css/index.css" rel="stylesheet">
 <script src="js/jquery-1.12.4.min.js"></script>
-<script src="js/wwb11.min.js"></script>
-<!-- Insert Google Analytics code here -->
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/wwb12.min.js"></script>
 <script src="js/percent.js"></script>
+<script>
+$(document).ready(function()
+{
+   var jQuerySlider1Options =
+   {
+      orientation: 'horizontal',
+      animate: true,
+      range: false,
+      min: 0,
+      max: 100,
+      value: 50
+   };
+   $("#jQuerySlider1").slider(jQuerySlider1Options);
+
+   $("#jQuerySlider1").bind('slidestart', function(event, ui)
+   {
+      $("#Editbox2").val(ui.value);
+   });
+});
+</script>
+<!-- Insert Google Analytics code here -->
 
 <link rel="manifest" href="manifest.json">
 
@@ -24,24 +48,29 @@
     <meta name="theme-color" content="#F77F00">
 
     <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="img/icon.png">
+    <meta name="msapplication-TileImage" content="imgas/icon.png">
     <meta name="msapplication-TileColor" content="#F77F00">
 </head>
-<body oninput="valor();" onmousemove="valor();" onload="valor();">
-<form name="pegar">
+<body>
+<form name="pegar" oninput="valor();" onmousemove="valor();" onmouseenter="valor();">
+
 <div id="Layer1">
 <div id="Layer1_Container">
-<input type="number" id="Editbox1" name="Editbox1" value="" placeholder="Ex 1080">
-<input type="button" id="Editbox2" name="Editbox2" value="" placeholder="%" onmousemove="sobe();">
+
+<input type="number" id="Editbox1" name="Editbox1" value="" spellcheck="false" placeholder="Ex :10 ">
+<input type="text" id="Editbox2" onclick="ToggleStyle('Editbox2', '', 500, 'easeInBounce');return false;" name="Editbox2" value="" spellcheck="false" placeholder="%" oninput="valor();">
+<div id="jQuerySlider1" onmouseenter="valor();">
+</div>
 <div id="wb_Heading1">
-<h1 id="Heading1" onclick="sobre();">Sobre</h1></div>
+<h1 id="Heading1"><a href="./sobre.html">Sobre</a></h1></div>
 </div>
 </div>
 <div id="Layer2">
 <div id="Layer2_Container">
-<input type="button" id="Editbox3" name="Editbox3" value="" readonly placeholder="" style="text-align: right;">
+<input type="text" id="Editbox3" name="Editbox3" value="0" readonly spellcheck="false">
 </div>
 </div>
+
 </form>
 </body>
 </html>
