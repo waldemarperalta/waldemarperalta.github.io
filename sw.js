@@ -9,6 +9,9 @@ var files = [
         '/wb.rotate.min.js',
         '/wwb11.min.js',
         '/manifest.json',
+        '/sobre.html',
+        'sobre.css',
+        'waldemarperalta.github.io',
 				'/',
 				];
 

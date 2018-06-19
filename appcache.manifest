@@ -4,8 +4,11 @@ CACHE:
 
 				./files.json
 				./index.html
+				./sobre.html
 				./Percent_pjct.css
 				./index.css
+				./sobre.css
+				./waldemarperalta.github.io
 				./jquery-1.12.4.min.js
 				./percent.js
 				./wb.rotate.min.js
