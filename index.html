@@ -51,15 +51,16 @@ $(document).ready(function()
     <meta name="msapplication-TileImage" content="imgas/icon.png">
     <meta name="msapplication-TileColor" content="#F77F00">
 </head>
-<body>
-<form name="pegar" oninput="valor();" onmousemove="valor();" onmouseenter="valor();">
+<body onload="buscarStore()">
+<form name="pegar" oninput="valor();" >
 
 <div id="Layer1">
 <div id="Layer1_Container">
 
 <input type="number" id="Editbox1" name="Editbox1" value="" spellcheck="false" placeholder="Ex :10 ">
-<input type="number" id="Editbox2" onclick="ToggleStyle('Editbox2', '', 500, 'easeInBounce');return false;" name="Editbox2" value="" spellcheck="false" placeholder="10%" oninput="valor();">
-<div id="jQuerySlider1" onmouseenter="valor();">
+<input type="number" id="Editbox2" name="Editbox2" value="" onclick="ToggleStyle('Editbox2', '', 500, 'easeInBounce');return false;"spellcheck="false" placeholder="10%" oninput="valor();">
+
+<div id="jQuerySlider1">
 </div>
 <div id="wb_Heading1">
 <h1 id="Heading1"><a href="./sobre.html">Sobre</a></h1></div>
