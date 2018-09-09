@@ -58,7 +58,7 @@ $(document).ready(function()
 <div id="Layer1_Container">
 
 <input type="number" id="Editbox1" name="Editbox1" value="" spellcheck="false" placeholder="Ex :10 ">
-<input type="number" id="Editbox2" name="Editbox2" value="" onclick="ToggleStyle('Editbox2', '', 500, 'easeInBounce');return false;"spellcheck="false" placeholder="10%" oninput="valor();">
+<input type="number" id="Editbox2" name="Editbox2" value="" onclick="ToggleStyle('Editbox2', '', 500, 'easeInBounce');return false;"spellcheck="false" placeholder="10%" oninput="valor();" pattern="[0-9]{3}" min="0" max="3">
 
 <div id="jQuerySlider1">
 </div>
