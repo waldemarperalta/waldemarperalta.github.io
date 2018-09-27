@@ -1,2 +1,0 @@
-# oquecomeu.github.io
-entretenimento

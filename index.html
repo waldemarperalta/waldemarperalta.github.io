@@ -1,3 +1,70 @@
+<?php
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['form_name']) && $_POST['form_name'] == 'loginform')
+{
+   $success_page = '';
+   $error_page = './inicio.html';
+   $mysql_server = '';
+   $mysql_username = '';
+   $mysql_password = '';
+   $mysql_database = '';
+   $mysql_table = '';
+   $crypt_pass = md5($_POST['password']);
+   $found = false;
+   $fullname = '';
+   $role = '';
+   $avatar = '';
+   $session_timeout = 192;
+   $db = mysqli_connect($mysql_server, $mysql_username, $mysql_password);
+   if (!$db)
+   {
+      die('Failed to connect to database server!<br>'.mysqli_error($db));
+   }
+   mysqli_select_db($db, $mysql_database) or die('Failed to select database<br>'.mysqli_error($db));
+   mysqli_set_charset($db, 'utf8');
+   $sql = "SELECT * FROM ".$mysql_table." WHERE username = '".mysqli_real_escape_string($db, $_POST['username'])."'";
+   $result = mysqli_query($db, $sql);
+   if ($data = mysqli_fetch_array($result))
+   {
+      if ($crypt_pass == $data['password'] && $data['active'] != 0)
+      {
+         $found = true;
+         $fullname = $data['fullname'];
+         $role = $data['role'];
+         $folder = substr($_SERVER['REQUEST_URI'], 0, strrpos($_SERVER['REQUEST_URI'], '/') + 1);
+         $avatar = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$folder" . "avatars/" . $data['avatar'];
+      }
+   }
+   mysqli_close($db);
+   if($found == false)
+   {
+      header('Location: '.$error_page);
+      exit;
+   }
+   else
+   {
+      if (session_id() == "")
+      {
+         session_start();
+      }
+      $_SESSION['username'] = $_POST['username'];
+      $_SESSION['fullname'] = $fullname;
+      $_SESSION['role'] = $role;
+      $_SESSION['avatar'] = $avatar;
+      $_SESSION['expires_by'] = time() + $session_timeout;
+      $_SESSION['expires_timeout'] = $session_timeout;
+      $rememberme = isset($_POST['rememberme']) ? true : false;
+      if ($rememberme)
+      {
+         setcookie('username', $_POST['username'], time() + 3600*24*30);
+         setcookie('password', $_POST['password'], time() + 3600*24*30);
+      }
+      header('Location: '.$success_page);
+      exit;
+   }
+}
+$username = isset($_COOKIE['username']) ? $_COOKIE['username'] : '';
+$password = isset($_COOKIE['password']) ? $_COOKIE['password'] : '';
+?>
 <!doctype html>
 <html>
 <head>
@@ -5,246 +72,51 @@
 <title>Untitled Page</title>
 <meta name="generator" content="WYSIWYG Web Builder 14 - http://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="font-awesome.min.css" rel="stylesheet">
 <link href="cook.css" rel="stylesheet">
 <link href="index.css" rel="stylesheet">
-<script src="jquery-1.12.4.min.js"></script>
-<script src="wb.parallax.min.js"></script>
-<script src="wb.carousel.min.js"></script>
-<script src="wwb14.min.js"></script>
-<script>
-$(document).ready(function()
-{
-   $('#wb_FontAwesomeIcon3').addClass('visibility-hidden');
-   $('#wb_FontAwesomeIcon8').addClass('visibility-hidden');
-   $('#wb_FontAwesomeIcon10').addClass('visibility-hidden');
-   $('#wb_FontAwesomeIcon11').addClass('visibility-hidden');
-   $("a[href*='#LayoutGrid1']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid1').offset().top }, 600, 'linear');
-   });
-   $('#wb_LayoutGrid1').parallax();
-   var Carousel1Opts =
-   {
-      delay: 3000,
-      duration: 500,
-      easing: 'linear',
-      mode: 'forward',
-      direction: '',
-      scalemode: 3,
-      pagination: true,
-      pagination_img_default: 'images/page_default.png',
-      pagination_img_active: 'images/page_active.png',
-      start: 0
-   };
-   $("#Carousel1").carousel(Carousel1Opts);
-   function FontAwesomeIcon3Scroll()
-   {
-      var $obj = $("#wb_FontAwesomeIcon3");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_FontAwesomeIcon3', 'transform-lightspeed-in', 100, 1000);
-      }
-   }
-   FontAwesomeIcon3Scroll();
-   $(window).scroll(function(event)
-   {
-      FontAwesomeIcon3Scroll();
-   });
-   function FontAwesomeIcon8Scroll()
-   {
-      var $obj = $("#wb_FontAwesomeIcon8");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_FontAwesomeIcon8', 'transform-lightspeed-in', 200, 1000);
-      }
-   }
-   FontAwesomeIcon8Scroll();
-   $(window).scroll(function(event)
-   {
-      FontAwesomeIcon8Scroll();
-   });
-   function FontAwesomeIcon10Scroll()
-   {
-      var $obj = $("#wb_FontAwesomeIcon10");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_FontAwesomeIcon10', 'transform-lightspeed-in', 300, 1000);
-      }
-   }
-   FontAwesomeIcon10Scroll();
-   $(window).scroll(function(event)
-   {
-      FontAwesomeIcon10Scroll();
-   });
-   function FontAwesomeIcon11Scroll()
-   {
-      var $obj = $("#wb_FontAwesomeIcon11");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_FontAwesomeIcon11', 'transform-lightspeed-in', 400, 1000);
-      }
-   }
-   FontAwesomeIcon11Scroll();
-   $(window).scroll(function(event)
-   {
-      FontAwesomeIcon11Scroll();
-   });
-   $("a[href*='#LayoutGrid2']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid2').offset().top }, 600, 'linear');
-   });
-   $("a[href*='#LayoutGrid3']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid3').offset().top }, 600, 'linear');
-   });
-});
-</script>
-
-
-<link rel="manifest" href="manifest.json">
-
-<!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Percent">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="apple-touch-icon-precomposed" href="images/icon.png">
-
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="images/icon.png">
-    <meta name="theme-color" content="#F77F00">
-
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="imgas/icon.png">
-    <meta name="msapplication-TileColor" content="#F77F00">
 </head>
 <body>
-<div id="wb_LayoutGrid1">
-<div id="LayoutGrid1">
-<div class="row">
-<div class="col-1">
-<div id="wb_Heading3" style="display:inline-block;width:100%;z-index:0;">
-<h1 id="Heading3">O QUE COMEU?</h1>
-</div>
-<div id="wb_ResponsiveMenu1" style="display:inline-block;width:100%;z-index:1;">
-<label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">O QUE COMEU?<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
-<input type="checkbox" id="ResponsiveMenu1-submenu">
-<ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
-<li><a role="menuitem" href="./index.html"><i class="fa fa-home fa-2x">&nbsp;</i><br>Home</a></li>
-<li><a role="menuitem" href="./nova.html"><i class="fa fa-file-text fa-2x">&nbsp;</i><br>Novo</a></li>
-<li><a role="menuitem" href="#"><i class="fa fa-paperclip fa-2x">&nbsp;</i><br>POSTS</a></li>
-<li><a role="menuitem" href="#LayoutGrid5"><i class="fa fa-star fa-2x">&nbsp;</i><br>FALE&nbsp;CONNOSCO</a></li>
-<li><a role="menuitem" href="#LayoutGrid3"><i class="fa fa-pencil-square fa-2x">&nbsp;</i><br>SOBRE</a></li>
-</ul>
-
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_Carousel1" style="position:absolute;left:0px;top:277px;width:970px;height:332px;z-index:18;overflow:hidden;position:relative;">
-<div id="Carousel1" style="position:absolute;">
-<div class="frame frame-1">
-<div class="innerframe">
-<div id="wb_IconFont2" style="position:absolute;left:316px;top:38px;width:339px;height:220px;text-align:center;z-index:2;">
-<div id="IconFont2"><i class="material-icons">&#xe541;</i></div></div>
-</div>
-</div>
-<div class="frame frame-2">
-<div class="innerframe">
-<div id="wb_IconFont3" style="position:absolute;left:1286px;top:43px;width:339px;height:220px;text-align:center;z-index:3;">
-<div id="IconFont3"><i class="material-icons">&#xe56c;</i></div></div>
-</div>
-</div>
-<div class="frame frame-3">
-<div class="innerframe">
-<div id="wb_IconFont4" style="position:absolute;left:2256px;top:42px;width:339px;height:220px;text-align:center;z-index:4;">
-<div id="IconFont4"><i class="material-icons">&#xe561;</i></div></div>
-</div>
-</div>
-<div class="frame frame-4">
-<div class="innerframe">
-<div id="wb_IconFont5" style="position:absolute;left:3226px;top:44px;width:339px;height:220px;text-align:center;z-index:5;">
-<div id="IconFont5"><i class="material-icons">&#xe563;</i></div></div>
-</div>
-</div>
-</div>
-</div>
 <div id="wb_LayoutGrid7">
+<div id="LayoutGrid7-overlay"></div>
 <div id="LayoutGrid7">
 <div class="row">
 <div class="col-1">
-<div id="wb_Text3">
-<span style="color:#000000;font-family:Verdana;font-size:19px;">Double click to editLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh<br><br></span>
+</div>
+<div class="col-2">
+<div id="wb_Heading3" style="display:inline-block;width:100%;z-index:0;">
+<h1 id="Heading3">O QUE COMEU?</h1>
+</div>
+<div id="wb_IconFont1" style="display:inline-block;width:130px;height:131px;text-align:center;z-index:1;">
+<div id="IconFont1"><i class="material-icons">&#xe853;</i></div>
+</div>
+<div id="wb_Login1" style="display:inline-block;width:100%;z-index:2;">
+<form name="loginform" method="post" accept-charset="UTF-8" action="<?php echo basename(__FILE__); ?>" id="loginform">
+<input type="hidden" name="form_name" value="loginform">
+<table id="Login1">
+<tr>
+   <td class="header">Log In</td>
+</tr>
+<tr>
+   <td class="row"><input class="input" name="username" type="text" id="username" value="<?php echo $username; ?>" placeholder="User Name"></td>
+</tr>
+<tr>
+   <td class="row"><input class="input" name="password" type="password" id="password" value="<?php echo $password; ?>" placeholder="Password"></td>
+</tr>
+<tr>
+   <td class="row"><input id="rememberme" type="checkbox" name="rememberme"><label for="rememberme">Remember me</label></td>
+</tr>
+<tr>
+   <td style="text-align:center;vertical-align:bottom"><input class="button" type="submit" name="login" value="Log In" id="login"></td>
+</tr>
+</table>
+</form>
+
+</div>
+<div id="wb_Heading1" style="display:inline-block;width:100%;z-index:3;">
+<h1 id="Heading1"><a href="./inicio.html">Criar conta</a></h1>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div id="StickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:46px;height:46px;z-index:20;">
-<div id="wb_up-arrow" style="position:absolute;left:7px;top:7px;width:24px;height:24px;text-align:center;z-index:7;">
-<a href="#LayoutGrid1"><div id="up-arrow"><i class="fa fa-angle-up"></i></div></a></div>
-</div>
-<div id="wb_LayoutGrid2">
-<div id="LayoutGrid2">
-<div class="row">
-<div class="col-1">
-<div id="wb_Heading2" style="display:inline-block;width:100%;z-index:8;">
-<h1 id="Heading2">Tema</h1>
-</div>
-<div id="wb_LayoutGrid4">
-<div id="LayoutGrid4">
-<div class="row">
-<div class="col-1">
-</div>
-</div>
-</div>
-</div>
-<div id="wb_Text2">
-<span style="color:#000000;font-family:Verdana;font-size:19px;">Double click to editLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid3">
-<div id="LayoutGrid3">
-<div class="row">
-<div class="col-1">
-<div id="wb_Heading1" style="display:inline-block;width:100%;z-index:11;">
-<h1 id="Heading1">SOBRE</h1>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid5">
-<div id="LayoutGrid5">
-<div class="row">
-<div class="col-1">
-<div id="wb_FontAwesomeIcon3" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:12;">
-<a href="http://www.facebook.com/poema.do.chato"><div id="FontAwesomeIcon3"><i class="fa fa-facebook"></i></div></a>
-</div>
-<div id="wb_FontAwesomeIcon8" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:13;">
-<a href="http://www.tuitter.com/@waldemarperalta"><div id="FontAwesomeIcon8"><i class="fa fa-twitter"></i></div></a>
-</div>
-<div id="wb_FontAwesomeIcon10" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:14;">
-<a href="http://instagram.com/waldemar_peralta"><div id="FontAwesomeIcon10"><i class="fa fa-instagram"></i></div></a>
-</div>
-<div id="wb_FontAwesomeIcon11" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:15;">
-<a href="tel:996611738"><div id="FontAwesomeIcon11"><i class="fa fa-phone"></i></div></a>
-</div>
-<div id="wb_Text17">
-<span style="color:#FFFFFF;font-family:Arial;font-size:12px;">Copyright 2018 Waldemar Peralta <br>All Rights Reserved </span>
-</div>
+<div class="col-3">
 </div>
 </div>
 </div>

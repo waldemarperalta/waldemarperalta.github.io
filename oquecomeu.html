@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 14 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="cook.css" rel="stylesheet">
+<link href="oquecomeu.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="wb.parallax.min.js"></script>
+<script src="affix.min.js"></script>
+<script src="scrollspy.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("a[href*='#LayoutGrid1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid1').offset().top }, 600, 'linear');
+   });
+   $('#wb_LayoutGrid1').parallax();
+   $("a[href*='#LayoutGrid7']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid7').offset().top }, 600, 'linear');
+   });
+   $("#FileUpload1 :file").on('change', function()
+   {
+      var input = $(this).parents('.input-group').find(':text');
+      input.val($(this).val());
+   });
+   $("#wb_ResponsiveMenu1").affix({offset:{top: $("#wb_ResponsiveMenu1").offset().top}});
+});
+</script>
+</head>
+<body data-spy="scroll">
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading3" style="display:inline-block;width:100%;z-index:0;">
+<h1 id="Heading3">NOVO POST</h1>
+</div>
+<div id="wb_ResponsiveMenu1" style="display:inline-block;width:100%;z-index:1;">
+<label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">COOK<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
+<input type="checkbox" id="ResponsiveMenu1-submenu">
+<ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
+<li><a role="menuitem" href="./inicio.html"><i class="fa fa-home fa-2x">&nbsp;</i><br>Home</a></li>
+<li><a role="menuitem" href="./oquecomeu.html"><i class="fa fa-cutlery fa-2x">&nbsp;</i><br>O&nbsp;que&nbsp;comeu?</a></li>
+<li><a role="menuitem" href="./user.html"><i class="fa fa-user fa-2x">&nbsp;</i><br>USER</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid7">
+<div id="LayoutGrid7">
+<div class="row">
+<div class="col-1">
+<div id="wb_LayoutGrid2">
+<form name="LayoutGrid2" method="post" action="mailto:yourname@yourdomain.com" enctype="text/plain" id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+<label for="Label1" id="Label1" style="display:block;width:100%;z-index:2;">Título</label>
+<input type="text" id="Editbox1" style="display:block;width: 100%;height:42px;z-index:3;" name="Editbox1" value="" spellcheck="false">
+<label for="Editbox1" id="Label2" style="display:block;width:100%;z-index:4;">Descrição</label>
+<textarea name="TextArea1" id="TextArea1" style="display:block;width: 100%;;height:138px;z-index:5;" rows="4" cols="41" spellcheck="false"></textarea>
+<label for="TextArea1" id="Label3" style="display:block;width:100%;z-index:6;">Foto</label>
+<div id="FileUpload1" class="input-group" style="display:table;width: 100%;height:38px;z-index:7;">
+<input class="form-control" type="text" readonly="">
+<label class="input-group-btn">
+<input type="file" name="FileUpload1" id="FileUpload1-file" style="display:none;"><span class="btn">Browse...</span>
+</label>
+</div>
+</div>
+<div class="col-3">
+</div>
+</div>
+</form>
+</div>
+<div id="wb_IconFont1" style="display:inline-block;width:100px;height:100px;text-align:center;z-index:9;">
+<a href="#" onclick="document.getElementById('LayoutGrid2').submit();return false;"><div id="IconFont1"><i class="material-icons">&#xe163;</i></div></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

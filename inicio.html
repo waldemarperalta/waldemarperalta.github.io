@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 14 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="cook.css" rel="stylesheet">
+<link href="inicio.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="wb.parallax.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="wb.carousel.effects.min.js"></script>
+<script src="affix.min.js"></script>
+<script src="scrollspy.min.js"></script>
+<script src="wwb14.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#wb_FontAwesomeIcon3').addClass('visibility-hidden');
+   $('#wb_FontAwesomeIcon8').addClass('visibility-hidden');
+   $('#wb_FontAwesomeIcon10').addClass('visibility-hidden');
+   $('#wb_FontAwesomeIcon11').addClass('visibility-hidden');
+   $("a[href*='#LayoutGrid1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid1').offset().top }, 600, 'linear');
+   });
+   $('#wb_LayoutGrid1').parallax();
+   var Carousel1Opts =
+   {
+      delay: 3000,
+      duration: 500,
+      easing: 'linear',
+      mode: 'fade',
+      direction: '',
+      scalemode: 3,
+      pagination: true,
+      pagination_img_default: 'images/page_default.png',
+      pagination_img_active: 'images/page_active.png',
+      start: 0
+   };
+   $("#Carousel1").carouseleffects(Carousel1Opts);
+   $("#wb_ResponsiveMenu1").affix({offset:{top: $("#wb_ResponsiveMenu1").offset().top}});
+   function FontAwesomeIcon3Scroll()
+   {
+      var $obj = $("#wb_FontAwesomeIcon3");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_FontAwesomeIcon3', 'transform-lightspeed-in', 100, 1000);
+      }
+   }
+   FontAwesomeIcon3Scroll();
+   $(window).scroll(function(event)
+   {
+      FontAwesomeIcon3Scroll();
+   });
+   function FontAwesomeIcon8Scroll()
+   {
+      var $obj = $("#wb_FontAwesomeIcon8");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_FontAwesomeIcon8', 'transform-lightspeed-in', 200, 1000);
+      }
+   }
+   FontAwesomeIcon8Scroll();
+   $(window).scroll(function(event)
+   {
+      FontAwesomeIcon8Scroll();
+   });
+   function FontAwesomeIcon10Scroll()
+   {
+      var $obj = $("#wb_FontAwesomeIcon10");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_FontAwesomeIcon10', 'transform-lightspeed-in', 300, 1000);
+      }
+   }
+   FontAwesomeIcon10Scroll();
+   $(window).scroll(function(event)
+   {
+      FontAwesomeIcon10Scroll();
+   });
+   function FontAwesomeIcon11Scroll()
+   {
+      var $obj = $("#wb_FontAwesomeIcon11");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_FontAwesomeIcon11', 'transform-lightspeed-in', 400, 1000);
+      }
+   }
+   FontAwesomeIcon11Scroll();
+   $(window).scroll(function(event)
+   {
+      FontAwesomeIcon11Scroll();
+   });
+   $("a[href*='#LayoutGrid2']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid2').offset().top }, 600, 'linear');
+   });
+   $("a[href*='#LayoutGrid3']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid3').offset().top }, 600, 'linear');
+   });
+   $('#wb_LayoutGrid3').parallax();
+});
+</script>
+</head>
+<body data-spy="scroll">
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading3" style="display:inline-block;width:100%;z-index:0;">
+<h1 id="Heading3">O QUE COMEU?</h1>
+</div>
+<div id="wb_ResponsiveMenu1" style="display:inline-block;width:100%;z-index:1;">
+<label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">COOK<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
+<input type="checkbox" id="ResponsiveMenu1-submenu">
+<ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
+<li><a role="menuitem" href="./inicio.html"><i class="fa fa-home fa-2x">&nbsp;</i><br>Home</a></li>
+<li><a role="menuitem" href="./oquecomeu.html"><i class="fa fa-cutlery fa-2x">&nbsp;</i><br>O&nbsp;que&nbsp;comeu?</a></li>
+<li><a role="menuitem" href="#LayoutGrid2"><i class="fa fa-paperclip fa-2x">&nbsp;</i><br>POSTS</a></li>
+<li>
+<label for="ResponsiveMenu1-submenu-0" class="toggle"><i class="fa fa-user fa-2x">&nbsp;</i>USER<b class="arrow-down"></b></label>
+<a role="menuitem" href="./user.html"><i class="fa fa-user fa-2x">&nbsp;</i><br>USER<b class="arrow-down"></b></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-0">
+<ul role="menu">
+<li><a role="menuitem" href="./login.html"><i class="fa fa-user fa-2x">&nbsp;</i>Login</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_Carousel1" style="position:absolute;left:0px;top:286px;width:970px;height:332px;z-index:28;overflow:hidden;position:relative;">
+<div id="Carousel1" style="position:absolute;">
+<div class="frame frame-1">
+<div class="innerframe">
+<div id="wb_IconFont2" style="position:absolute;left:316px;top:38px;width:339px;height:220px;text-align:center;z-index:2;">
+<div id="IconFont2"><i class="material-icons">&#xe541;</i></div></div>
+</div>
+</div>
+<div class="frame frame-2" style="display:none">
+<div class="innerframe">
+<div id="wb_IconFont3" style="position:absolute;left:316px;top:43px;width:339px;height:219px;text-align:center;z-index:3;">
+<div id="IconFont3"><i class="material-icons">&#xe56c;</i></div></div>
+</div>
+</div>
+<div class="frame frame-3" style="display:none">
+<div class="innerframe">
+<div id="wb_IconFont4" style="position:absolute;left:316px;top:42px;width:339px;height:220px;text-align:center;z-index:4;">
+<div id="IconFont4"><i class="material-icons">&#xe561;</i></div></div>
+</div>
+</div>
+<div class="frame frame-4" style="display:none">
+<div class="innerframe">
+<div id="wb_IconFont5" style="position:absolute;left:316px;top:44px;width:339px;height:220px;text-align:center;z-index:5;">
+<div id="IconFont5"><i class="material-icons">&#xe563;</i></div></div>
+</div>
+</div>
+</div>
+</div>
+<div id="StickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:46px;height:46px;z-index:29;">
+<div id="wb_up-arrow" style="position:absolute;left:7px;top:7px;width:24px;height:24px;text-align:center;z-index:6;">
+<a href="#LayoutGrid1"><div id="up-arrow"><i class="fa fa-arrow-up"></i></div></a></div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading2" style="display:inline-block;width:100%;z-index:13;">
+<h1 id="Heading2">Publicações</h1>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading1" style="display:inline-block;width:100%;z-index:7;">
+<h1 id="Heading1">Titulo</h1>
+</div>
+<picture id="wb_Picture1" style="display:block;width: 100%;height:372px;z-index:8">
+<img src="images/receita-feijoada.jpg" id="Picture1" alt="" srcset="">
+</picture>
+<div id="wb_Text1">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Double click to edit</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid6">
+<div id="LayoutGrid6">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading4" style="display:inline-block;width:100%;z-index:10;">
+<h1 id="Heading4">Titulo</h1>
+</div>
+<picture id="wb_Picture2" style="display:block;width: 100%;height:563px;z-index:11">
+<img src="images/fundomeu.png" id="Picture2" alt="" srcset="">
+</picture>
+<div id="wb_Text2">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Double click to edit</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid5">
+<div id="LayoutGrid5">
+<div class="row">
+<div class="col-1">
+<div id="wb_FontAwesomeIcon3" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:16;">
+<a href="http://www.facebook.com/poema.do.chato"><div id="FontAwesomeIcon3"><i class="fa fa-facebook"></i></div></a>
+</div>
+<div id="wb_FontAwesomeIcon8" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:17;">
+<a href="http://www.tuitter.com/@waldemarperalta"><div id="FontAwesomeIcon8"><i class="fa fa-twitter"></i></div></a>
+</div>
+<div id="wb_FontAwesomeIcon10" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:18;">
+<a href="http://instagram.com/waldemar_peralta"><div id="FontAwesomeIcon10"><i class="fa fa-instagram"></i></div></a>
+</div>
+<div id="wb_FontAwesomeIcon11" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:19;">
+<a href="tel:996611738"><div id="FontAwesomeIcon11"><i class="fa fa-phone"></i></div></a>
+</div>
+<div id="wb_Text17">
+<span style="color:#696969;font-family:Arial;font-size:16px;">Copyright 2018 Waldemar Peralta <br>All Rights Reserved </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

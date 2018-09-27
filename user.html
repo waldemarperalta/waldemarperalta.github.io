@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 14 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="cook.css" rel="stylesheet">
+<link href="user.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="wb.parallax.min.js"></script>
+<script src="affix.min.js"></script>
+<script src="scrollspy.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("a[href*='#LayoutGrid1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid1').offset().top }, 600, 'linear');
+   });
+   $('#wb_LayoutGrid1').parallax();
+   $("#wb_ResponsiveMenu1").affix({offset:{top: $("#wb_ResponsiveMenu1").offset().top}});
+});
+</script>
+</head>
+<body data-spy="scroll">
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_IconFont1" style="display:inline-block;width:130px;height:163px;text-align:center;z-index:0;">
+<div id="IconFont1"><i class="material-icons">&#xe853;</i></div>
+</div>
+<div id="wb_ResponsiveMenu1" style="display:inline-block;width:100%;z-index:1;">
+<label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">COOK<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
+<input type="checkbox" id="ResponsiveMenu1-submenu">
+<ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
+<li><a role="menuitem" href="./inicio.html"><i class="fa fa-home fa-2x">&nbsp;</i><br>Home</a></li>
+<li><a role="menuitem" href="./oquecomeu.html"><i class="fa fa-cutlery fa-2x">&nbsp;</i><br>O&nbsp;que&nbsp;comeu?</a></li>
+<li><a role="menuitem" href="#LayoutGrid2"><i class="fa fa-paperclip fa-2x">&nbsp;</i><br>POSTS</a></li>
+<li><a role="menuitem" href="./user.html"><i class="fa fa-user fa-2x">&nbsp;</i><br>USER</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid7">
+<div id="LayoutGrid7">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid5">
+<div id="LayoutGrid5">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text17">
+<span style="color:#FFFFFF;font-family:Arial;font-size:12px;">Copyright 2018 Waldemar Peralta <br>All Rights Reserved </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
