@@ -50,9 +50,11 @@ $password = isset($_COOKIE['password']) ? $_COOKIE['password'] : '';
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Page</title>
+<title>o que comeu?</title>
 <meta name="generator" content="WYSIWYG Web Builder 14 - http://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="icon.png" rel="shortcut icon" type="image/x-icon">
+<link href="icon.png" rel="apple-touch-icon" sizes="192x192">
 <link href="cook.css" rel="stylesheet">
 <link href="index.css" rel="stylesheet">
 </head>
