@@ -57,6 +57,24 @@ $password = isset($_COOKIE['password']) ? $_COOKIE['password'] : '';
 <link href="icon.png" rel="apple-touch-icon" sizes="192x192">
 <link href="cook.css" rel="stylesheet">
 <link href="index.css" rel="stylesheet">
+
+
+<link rel="manifest" href="manifest.json">
+
+<!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Percent">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon-precomposed" href="images/icon.png">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/icon.png">
+    <meta name="theme-color" content="#F77F00">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="imgas/icon.png">
+    <meta name="msapplication-TileColor" content="#F77F00">
 </head>
 <body>
 <div id="wb_LayoutGrid7">

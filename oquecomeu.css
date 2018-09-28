@@ -9,430 +9,6 @@ body
    margin: 0;
    padding: 0;
 }
-#wb_LayoutGrid1
-{
-   clear: both;
-   position: relative;
-   table-layout: fixed;
-   display: table;
-   text-align: center;
-   width: 100%;
-   background-color: transparent;
-   background-image: url(images/receita-feijoada.jpg);
-   background-repeat: no-repeat;
-   background-position: center center;
-   background-attachment: fixed;
-   background-position: 50% 0;
-   background-size: cover;
-   border: 0px solid #CCCCCC;
-   box-sizing: border-box;
-   margin: 0;
-   -webkit-animation: transform-bounce-in 1000ms linear 0ms 1 normal both;
-   -moz-animation: transform-bounce-in 1000ms linear 0ms 1 normal both;
-   animation: transform-bounce-in 1000ms linear 0ms 1 normal both;
-}
-#LayoutGrid1
-{
-   box-sizing: border-box;
-   padding: 30px 0px 0px 0px;
-   margin-right: auto;
-   margin-left: auto;
-}
-#LayoutGrid1 .row
-{
-   margin-right: 0;
-   margin-left: 0;
-}
-#LayoutGrid1 > .row > .col-1
-{
-   box-sizing: border-box;
-   font-size: 0px;
-   min-height: 1px;
-   padding-right: 0px;
-   padding-left: 0px;
-   position: relative;
-}
-#LayoutGrid1 > .row > .col-1
-{
-   float: left;
-}
-#LayoutGrid1 > .row > .col-1
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   width: 100%;
-   text-align: left;
-}
-#LayoutGrid1:before,
-#LayoutGrid1:after,
-#LayoutGrid1 .row:before,
-#LayoutGrid1 .row:after
-{
-   display: table;
-   content: " ";
-}
-#LayoutGrid1:after,
-#LayoutGrid1 .row:after
-{
-   clear: both;
-}
-@media (max-width: 480px)
-{
-#LayoutGrid1 > .row > .col-1
-{
-   float: none;
-   width: 100% !important;
-}
-}
-#wb_LayoutGrid7
-{
-   clear: both;
-   position: relative;
-   table-layout: fixed;
-   display: table;
-   text-align: center;
-   width: 100%;
-   height: 100vh;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #CCCCCC;
-   box-sizing: border-box;
-   margin: 0;
-   -webkit-animation: transform-bounce 1000ms linear 0ms 1 normal both;
-   -moz-animation: transform-bounce 1000ms linear 0ms 1 normal both;
-   animation: transform-bounce 1000ms linear 0ms 1 normal both;
-}
-#LayoutGrid7
-{
-   box-sizing: border-box;
-   height: 100vh;
-   padding: 0px 15px 0px 15px;
-   margin-right: auto;
-   margin-left: auto;
-}
-#LayoutGrid7 .row
-{
-   margin-right: -15px;
-   margin-left: -15px;
-}
-#LayoutGrid7 > .row > .col-1
-{
-   box-sizing: border-box;
-   font-size: 0px;
-   min-height: 1px;
-   padding-right: 15px;
-   padding-left: 15px;
-   position: relative;
-}
-#LayoutGrid7 > .row > .col-1
-{
-   float: left;
-}
-#LayoutGrid7 > .row > .col-1
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   width: 100%;
-   text-align: center;
-}
-#LayoutGrid7:before,
-#LayoutGrid7:after,
-#LayoutGrid7 .row:before,
-#LayoutGrid7 .row:after
-{
-   display: table;
-   content: " ";
-}
-#LayoutGrid7:after,
-#LayoutGrid7 .row:after
-{
-   clear: both;
-}
-@media (max-width: 480px)
-{
-#LayoutGrid7 > .row > .col-1
-{
-   float: none;
-   width: 100% !important;
-}
-}
-#wb_Heading3
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid transparent;
-   box-sizing: border-box;
-   margin: 0;
-   padding: 10px 20px 20px 0px;
-   text-align: center;
-}
-#Heading3
-{
-   color: #FFFFFF;
-   font-family: Verdana;
-   font-weight: normal;
-   font-size: 64px;
-   margin: 0;
-   text-align: center;
-}
-#wb_LayoutGrid2
-{
-   clear: both;
-   position: relative;
-   table-layout: fixed;
-   display: table;
-   text-align: center;
-   width: 100%;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #CCCCCC;
-   box-sizing: border-box;
-   margin: 0;
-}
-#LayoutGrid2
-{
-   box-sizing: border-box;
-   padding: 10px 15px 10px 15px;
-   margin-right: auto;
-   margin-left: auto;
-}
-#LayoutGrid2 .row
-{
-   margin-right: -15px;
-   margin-left: -15px;
-}
-#LayoutGrid2 > .row > .col-1, #LayoutGrid2 > .row > .col-2, #LayoutGrid2 > .row > .col-3
-{
-   box-sizing: border-box;
-   font-size: 0px;
-   min-height: 1px;
-   padding-right: 15px;
-   padding-left: 15px;
-   position: relative;
-}
-#LayoutGrid2 > .row > .col-1, #LayoutGrid2 > .row > .col-2, #LayoutGrid2 > .row > .col-3
-{
-   float: left;
-}
-#LayoutGrid2 > .row > .col-1
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   width: 25%;
-   text-align: center;
-}
-#LayoutGrid2 > .row > .col-2
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   width: 50%;
-   text-align: left;
-}
-#LayoutGrid2 > .row > .col-3
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   width: 25%;
-   text-align: left;
-}
-#LayoutGrid2:before,
-#LayoutGrid2:after,
-#LayoutGrid2 .row:before,
-#LayoutGrid2 .row:after
-{
-   display: table;
-   content: " ";
-}
-#LayoutGrid2:after,
-#LayoutGrid2 .row:after
-{
-   clear: both;
-}
-@media (max-width: 480px)
-{
-#LayoutGrid2 > .row > .col-1, #LayoutGrid2 > .row > .col-2, #LayoutGrid2 > .row > .col-3
-{
-   float: none;
-   width: 100% !important;
-}
-}
-#Label1
-{
-   border: 0px solid #CCCCCC;
-   border-radius: 4px;
-   background-color: transparent;
-   background-image: none;
-   color :#000000;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-   box-sizing: border-box;
-   padding: 4px 4px 4px 4px;
-   margin: 0;
-   text-align: left;
-   vertical-align: top;
-}
-#Editbox1
-{
-   border: 2px solid #4F4F4F;
-   border-radius: 2px;
-   background-color: #FFFFFF;
-   background-image: none;
-   color :#000000;
-   font-family: Verdana;
-   font-weight: normal;
-   font-size: 19px;
-   box-sizing: border-box;
-   line-height: 30px;
-   padding: 4px 4px 4px 4px;
-   margin: 0;
-   text-align: left;
-}
-#Label2
-{
-   border: 0px solid #CCCCCC;
-   border-radius: 4px;
-   background-color: transparent;
-   background-image: none;
-   color :#000000;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-   box-sizing: border-box;
-   padding: 4px 4px 4px 4px;
-   margin: 0;
-   text-align: left;
-   vertical-align: top;
-}
-#TextArea1
-{
-   border: 2px solid #4F4F4F;
-   border-radius: 2px;
-   background-color: #FFFFFF;
-   background-image: none;
-   color :#000000;
-   font-family: Verdana;
-   font-weight: normal;
-   font-size: 19px;
-   box-sizing: border-box;
-   padding: 4px 4px 4px 4px;
-   margin: 0;
-   text-align: left;
-   overflow: auto;
-   resize: none;
-}
-#Label3
-{
-   border: 0px solid #CCCCCC;
-   border-radius: 4px;
-   background-color: transparent;
-   background-image: none;
-   color :#000000;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-   box-sizing: border-box;
-   padding: 4px 4px 4px 4px;
-   margin: 0;
-   text-align: left;
-   vertical-align: top;
-}
-#FileUpload1 *
-{
-   box-sizing: border-box;
-}
-#FileUpload1{
-   display: table;
-   border-collapse: separate;
-   margin: 0;
-}
-#FileUpload1 .form-control
-{
-   display: block;
-   width: 100%;
-   height: 38px;
-   line-height: 26px;
-   padding: 4px 4px 8px 4px;
-   font-family:Verdana;
-   font-weight: normal;
-   font-size: 19px;
-   color: #555555;
-   background-color: #FFFFFF;
-   background-image: none;
-   border: 2px solid #4F4F4F;
-   border-radius: 2px;
-}
-#FileUpload1 .form-control
-{
-   position: relative;
-   z-index: 2;
-   float: left;
-   width: 100%;
-   margin-bottom: 0px;
-}
-#FileUpload1 label
-{
-   display: inline-block;
-   margin-bottom: 5px;
-   font-weight: 700;
-}
-#FileUpload1 .input-group-btn, FileUpload1 .form-control
-{
-   display: table-cell;
-}
-#FileUpload1 :first-child.form-control, FileUpload1 :first-child.input-group-btn > .btn, FileUpload1 :first-child.input-group-btn > .btn-group > .btn, FileUpload1 :last-child.input-group-btn > :not(:last-child):not(.dropdown-toggle).btn, FileUpload1 :last-child.input-group-btn > :not(:last-child).btn-group > .btn
-{
-   border-bottom-right-radius: 0px;
-   border-top-right-radius: 0px;
-}
-#FileUpload1 .input-group-btn
-{
-   width: 1%;
-   white-space: nowrap;
-   vertical-align: middle;
-   position: relative;
-   font-size: 0px;
-   white-space: nowrap;
-}
-#FileUpload1 .btn
-{
-   display: inline-block;
-   margin-bottom: 0px;
-   font-weight: 400;
-   text-align: center;
-   vertical-align: middle;
-   cursor: pointer;
-   background-color: #4F4F4F;
-   background-image: none;
-   border: 1px solid #4F4F4F;
-   color: #FFFFFF;
-   white-space: nowrap;
-   padding: 4px 8px 8px 8px;
-   font-family:Verdana;
-   font-weight: normal;
-   font-size: 19px;
-   line-height: 26px;
-   border-radius: 2px;
-   height: 38px;
-}
-#FileUpload1 .input-group-btn > .btn
-{
-   position: relative;
-}
-#FileUpload1 :last-child.form-control, #FileUpload1 :last-child.input-group-btn > .btn, #FileUpload1 :last-child.input-group-btn > .btn-group > .btn, #FileUpload1 :first-child.input-group-btn > :not(:first-child).btn, FileUpload1 :first-child.input-group-btn > :not(:first-child).btn-group > .btn
-{
-   border-bottom-left-radius: 0px;
-   border-top-left-radius: 0px;
-}
-#FileUpload1 :last-child.input-group-btn > .btn, FileUpload1 :last-child.input-group-btn > .btn-group
-{
-   margin-left: -1px;
-}
 #wb_IconFont1
 {
    background-color: transparent;
@@ -484,304 +60,970 @@ body
 {
    color: #000000;
 }
-#wb_ResponsiveMenu1
-{
-   background-color: rgba(255,255,255,1.00);
-   display: block;
-   font-family: Tahoma;
-   font-weight: normal;
-   text-align: center;
-   width: 100%;
-}
-#ResponsiveMenu1
-{
-   background-color: #FFFFFF;
-   display: inline-block;
-   height: 72px;
-}
-#wb_ResponsiveMenu1 ul
-{
-   list-style: none;
-   margin: 0;
-   padding: 0;
-   position: relative;
-}
-#wb_ResponsiveMenu1 ul:after
+#wb_LayoutGrid1
 {
    clear: both;
-   content: "";
-   display: block;
-}
-#wb_ResponsiveMenu1 ul li
-{
-   background-color: #FFFFFF;
-   display: list-item;
-   float: left;
-   list-style: none;
-   z-index: 9999;
-}
-#wb_ResponsiveMenu1 ul li i
-{
-   font-size: 24px;
-   width: 24px;
-}
-#wb_ResponsiveMenu1 ul li a 
-{
-   color: #4F4F4F;
-   font-family: Tahoma;
-   font-weight: normal;
-   font-size: 16px;
-   font-style: normal;
-   padding: 15px 30px 15px 30px;
+   position: relative;
+   table-layout: fixed;
+   display: table;
    text-align: center;
-   text-decoration: none;
+   width: 100%;
+   background-color: transparent;
+   background-image: url(images/receita-feijoada.jpg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+   -webkit-animation: transform-bounce-in 1000ms linear 0ms 1 normal both;
+   -moz-animation: transform-bounce-in 1000ms linear 0ms 1 normal both;
+   animation: transform-bounce-in 1000ms linear 0ms 1 normal both;
 }
-#wb_ResponsiveMenu1 > ul > li > a 
+#LayoutGrid1
 {
-   height: 42px;
+   box-sizing: border-box;
+   padding: 20px 0px 20px 0px;
+   margin-right: auto;
+   margin-left: auto;
 }
-.ResponsiveMenu1 a 
+#LayoutGrid1 .row
+{
+   margin-right: 0;
+   margin-left: 0;
+}
+#LayoutGrid1 > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 0px;
+   padding-left: 0px;
+   position: relative;
+}
+#LayoutGrid1 > .row > .col-1
+{
+   float: left;
+}
+#LayoutGrid1 > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 100%;
+   text-align: left;
+}
+#LayoutGrid1:before,
+#LayoutGrid1:after,
+#LayoutGrid1 .row:before,
+#LayoutGrid1 .row:after
+{
+   display: table;
+   content: " ";
+}
+#LayoutGrid1:after,
+#LayoutGrid1 .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#LayoutGrid1 > .row > .col-1
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_contact
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#contact
+{
+   box-sizing: border-box;
+   padding: 20px 30px 20px 30px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#contact .row
+{
+   margin-right: -30px;
+   margin-left: -30px;
+}
+#contact > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 30px;
+   padding-left: 30px;
+   position: relative;
+}
+#contact > .row > .col-1
+{
+   float: left;
+}
+#contact > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 100%;
+   text-align: center;
+}
+#contact > .row > .col-1 > .col-1-padding
+{
+   padding: 10px 0px 10px 0px;
+}
+#contact:before,
+#contact:after,
+#contact .row:before,
+#contact .row:after
+{
+   display: table;
+   content: " ";
+}
+#contact:after,
+#contact .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#contact > .row > .col-1
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#Label4
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#696969;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 15px;
+   box-sizing: border-box;
+   padding: 4px 4px 4px 0px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#editboxName
+{
+   border-top-width: 0px;
+   border-right-width: 0px;
+   border-bottom-width: 2px;
+   border-left-width: 0px;
+   border-top-style: solid;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   border-left-style: solid;
+   border-top-color: #696969;
+   border-right-color: #696969;
+   border-bottom-color: #696969;
+   border-left-color: #696969;
+   background-color: #FFFFFF;
+   background-image: none;
+   color :#696969;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 15px;
+   box-sizing: border-box;
+   line-height: 24px;
+   padding: 4px 4px 4px 4px;
+   margin: 5px 0px 10px 0px;
+   text-align: left;
+}
+#Label6
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#696969;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 15px;
+   box-sizing: border-box;
+   padding: 20px 4px 4px 0px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#editboxMessage
+{
+   border-top-width: 0px;
+   border-right-width: 0px;
+   border-bottom-width: 2px;
+   border-left-width: 0px;
+   border-top-style: solid;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   border-left-style: solid;
+   border-top-color: #282828;
+   border-right-color: #282828;
+   border-bottom-color: #282828;
+   border-left-color: #282828;
+   background-color: #FFFFFF;
+   background-image: none;
+   color :#696969;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 15px;
+   box-sizing: border-box;
+   padding: 4px 4px 4px 4px;
+   margin: 5px 0px 10px 0px;
+   text-align: left;
+   overflow: auto;
+   resize: none;
+}
+#FileUpload2 *
+{
+   box-sizing: border-box;
+}
+#FileUpload2{
+   display: table;
+   border-collapse: separate;
+   margin: 0;
+}
+#FileUpload2 .form-control
 {
    display: block;
-}
-#wb_ResponsiveMenu1 li a:hover, #wb_ResponsiveMenu1 li .active
-{ 
+   width: 100%;
+   height: 38px;
+   line-height: 20px;
+   padding: 10px 4px 8px 4px;
+   font-family:Verdana;
+   font-weight: normal;
+   font-size: 19px;
+   color: #555555;
    background-color: #FFFFFF;
-   color: #000000;
+   background-image: none;
+   border: 2px solid #000000;
+   border-radius: 0px;
 }
-#wb_ResponsiveMenu1 ul ul
+#FileUpload2 .form-control
 {
-   display: none;
-   position: absolute;
-   top: 72px;
-}
-#wb_ResponsiveMenu1 ul li:hover > ul
-{
-   display: list-item;
-}
-#wb_ResponsiveMenu1 ul ul li 
-{
-   background-color: #7A7A7A;
-   color: #FFFFFF;
-   float: none;
    position: relative;
-   width: 136px;
+   z-index: 2;
+   float: left;
+   width: 100%;
+   margin-bottom: 0px;
 }
-#wb_ResponsiveMenu1 ul ul li a:hover, #wb_ResponsiveMenu1 ul ul li .active
-{
-   background-color: #CCCCCC;
-   color: #424242;
-}
-#wb_ResponsiveMenu1 ul ul li i 
-{
-   margin-right: 8px;
-   vertical-align: middle;
-}
-#wb_ResponsiveMenu1 ul ul li a 
-{
-   color: #FFFFFF;
-   padding: 0px 20px 15px 20px;
-   text-align: left;
-   vertical-align: middle;
-}
-#wb_ResponsiveMenu1 ul ul ul li 
-{
-   left: 136px;
-   position: relative;
-   top: -72px;
-}
-#wb_ResponsiveMenu1 .arrow-down 
+#FileUpload2 label
 {
    display: inline-block;
-   width: 0;
-   height: 0;
-   margin-left: 2px;
-   vertical-align: middle;
-   border-top: 4px solid #4F4F4F;
-   border-right: 4px solid transparent;
-   border-left: 4px solid transparent;
-   border-bottom: 0 dotted;
+   margin-bottom: 5px;
+   font-weight: 700;
 }
-#wb_ResponsiveMenu1 .arrow-left 
+#FileUpload2 .input-group-btn, FileUpload2 .form-control
+{
+   display: table-cell;
+}
+#FileUpload2 :first-child.form-control, FileUpload2 :first-child.input-group-btn > .btn, FileUpload2 :first-child.input-group-btn > .btn-group > .btn, FileUpload2 :last-child.input-group-btn > :not(:last-child):not(.dropdown-toggle).btn, FileUpload2 :last-child.input-group-btn > :not(:last-child).btn-group > .btn
+{
+   border-bottom-right-radius: 0px;
+   border-top-right-radius: 0px;
+}
+#FileUpload2 .input-group-btn
+{
+   width: 1%;
+   white-space: nowrap;
+   vertical-align: middle;
+   position: relative;
+   font-size: 0px;
+   white-space: nowrap;
+}
+#FileUpload2 .btn
+{
+   display: inline-block;
+   margin-bottom: 0px;
+   font-weight: 400;
+   text-align: center;
+   vertical-align: middle;
+   cursor: pointer;
+   background-color: #4F4F4F;
+   background-image: none;
+   border: 1px solid #4F4F4F;
+   color: #FFFFFF;
+   white-space: nowrap;
+   padding: 10px 8px 8px 8px;
+   font-family:Verdana;
+   font-weight: normal;
+   font-size: 19px;
+   line-height: 20px;
+   border-radius: 0px;
+   height: 38px;
+}
+#FileUpload2 .input-group-btn > .btn
+{
+   position: relative;
+}
+#FileUpload2 :last-child.form-control, #FileUpload2 :last-child.input-group-btn > .btn, #FileUpload2 :last-child.input-group-btn > .btn-group > .btn, #FileUpload2 :first-child.input-group-btn > :not(:first-child).btn, FileUpload2 :first-child.input-group-btn > :not(:first-child).btn-group > .btn
+{
+   border-bottom-left-radius: 0px;
+   border-top-left-radius: 0px;
+}
+#FileUpload2 :last-child.input-group-btn > .btn, FileUpload2 :last-child.input-group-btn > .btn-group
+{
+   margin-left: -1px;
+}
+#Label1
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#696969;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 15px;
+   box-sizing: border-box;
+   padding: 20px 4px 4px 0px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#wb_header
+{
+   clear: both;
+   position: fixed;
+   left: 0;
+   top: 0;
+   z-index: 7777;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: rgba(255,255,255,0.40);
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#header
+{
+   box-sizing: border-box;
+   padding: 10px 15px 5px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#header .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#header > .row > .col-1, #header > .row > .col-2
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#header > .row > .col-1, #header > .row > .col-2
+{
+   float: left;
+}
+#header > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 16.66666667%;
+   text-align: left;
+}
+#header > .row > .col-2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 83.33333333%;
+   text-align: left;
+}
+#header:before,
+#header:after,
+#header .row:before,
+#header .row:after
+{
+   display: table;
+   content: " ";
+}
+#header:after,
+#header .row:after
+{
+   clear: both;
+}
+@media (max-width: 320px)
+{
+#header > .row > .col-1, #header > .row > .col-2
+{
+   float: none;
+   width: 100% !important;
+}
+}
+.ThemeableMenu1 .hide 
+{
+   display: none!important;
+}
+.ThemeableMenu1 .show 
+{
+   display: block!important;
+}
+.ThemeableMenu1 .hidden
+{
+   display: none!important;
+   visibility: hidden!important;
+}
+.ThemeableMenu1 .nav
+{
+   font-family: "Comic Sans MS";
+   font-weight: bold;
+   font-size: 19px;
+   font-style: normal;
+   color: #4F4F4F;
+   text-align: left;
+}
+#ThemeableMenu1, .ThemeableMenu1 .nav, .ThemeableMenu1 *
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   line-height: 1;
+   list-style: none;
+}
+.ThemeableMenu1 .nav:before,
+.ThemeableMenu1 .nav:after 
+{
+   content: " ";
+   display: table;
+}
+.ThemeableMenu1 .nav:after 
+{
+   clear: both;
+}
+.ThemeableMenu1 .nav a 
+{
+   text-decoration: none;
+}
+.ThemeableMenu1 .nav ul
+{
+   margin-top: 0;
+   margin-bottom: 10px;
+}
+.ThemeableMenu1 .nav ul ul
+{
+   margin-bottom: 0;
+}
+.ThemeableMenu1 .container 
+{
+   margin-right: auto;
+   margin-left: auto;
+   padding: 0;
+}
+.ThemeableMenu1 .container:before,
+.ThemeableMenu1 .container:after 
+{
+   content: " ";
+   display: table;
+}
+.ThemeableMenu1 .container:after 
+{
+   clear: both;
+}
+.ThemeableMenu1 .collapse 
+{
+   display: none;
+}
+.ThemeableMenu1 .collapse.in 
+{
+   display: block;
+}
+.ThemeableMenu1 .collapsing 
+{
+   position: relative;
+   height: 0;
+   overflow: hidden;
+   -webkit-transition: height .35s ease;
+   transition: height .35s ease;
+}
+.ThemeableMenu1 .caret 
 {
    display: inline-block;
    width: 0;
    height: 0;
    margin-left: 4px;
    vertical-align: middle;
-   border-left: 4px solid #FFFFFF;
-   border-top: 4px solid transparent;
-   border-bottom: 4px solid transparent;
-   border-right: 0 dotted;
+   border-top: 4px solid #000;
+   border-right: 4px solid transparent;
+   border-left: 4px solid transparent;
+   border-bottom: 0 dotted;
 }
-#wb_ResponsiveMenu1 li a:hover .arrow-down
-{ 
-   border-top-color: #000000;
-}
-#wb_ResponsiveMenu1 ul ul li a:hover .arrow-left, #wb_ResponsiveMenu1 ul ul li .active .arrow-left
-{ 
-   border-left-color: #424242;
-}
-#wb_ResponsiveMenu1 .toggle,[id^=ResponsiveMenu1-submenu]
+.ThemeableMenu1 .dropdown 
 {
-   display: none;
-}
-@media all and (max-width:970px) 
-{
-#wb_ResponsiveMenu1 
-{
-   margin: 0;
-   text-align: left;
-}
-#wb_ResponsiveMenu1 ul li a, #wb_ResponsiveMenu1 .toggle
-{
-   font-size: 16px;
-   font-weight: normal;
-   font-style: normal;
-   padding: 0px 20px 15px 20px;
-}
-#wb_ResponsiveMenu1 .toggle + a
-{
-   display: none !important;
-}
-.ResponsiveMenu1 
-{
-   display: none;
-   z-index: 9999;
-}
-#ResponsiveMenu1 
-{
-   background-color: transparent;
-   display: none;
-}
-#wb_ResponsiveMenu1 > ul > li > a 
-{
-   height: auto;
-}
-#wb_ResponsiveMenu1 .toggle 
-{
-   display: block;
-   background-color: #FFFFFF;
-   color: #4F4F4F;
-   padding: 0px 20px 0px 20px;
-   line-height: 39px;
-   text-decoration: none;
-   border: none;
    position: relative;
 }
-#wb_ResponsiveMenu1 .toggle:hover 
+.ThemeableMenu1 .dropdown-toggle:focus 
 {
-   background-color: #FFFFFF;
-   color: #000000;
+   outline: 0;
 }
-[id^=ResponsiveMenu1-submenu]:checked + ul 
+.ThemeableMenu1 .dropdown-menu 
 {
-   display: block !important;
-}
-#ResponsiveMenu1-title
-{
-   height: 72px;
-   line-height: 72px !important;
-   text-align: left;
-}
-#wb_ResponsiveMenu1 ul li 
-{
-   display: block;
-   width: 100%;
-   text-align: left;
-}
-#wb_ResponsiveMenu1 ul ul .toggle,
-#wb_ResponsiveMenu1 ul ul a 
-{
-   padding: 0 40px;
-}
-#wb_ResponsiveMenu1 a:hover,
-#wb_ResponsiveMenu1 ul ul ul a 
-{
-   background-color: #7A7A7A;
-   color: #FFFFFF;
-}
-#wb_ResponsiveMenu1 ul li ul li .toggle,
-#wb_ResponsiveMenu1 ul ul a 
-{
-   background-color: #7A7A7A;
-   color: #FFFFFF;
-}
-#wb_ResponsiveMenu1 ul ul ul a 
-{
-   padding: 0px 20px 15px 60px;
-}
-#wb_ResponsiveMenu1 ul li a 
-{
-   text-align: left;
-}
-#wb_ResponsiveMenu1 ul li a br 
-{
-   display: none;
-}
-#wb_ResponsiveMenu1 ul li i 
-{
-   margin-right: 8px;
-}
-#wb_ResponsiveMenu1 ul ul 
-{
-   float: none;
-   position: static;
-}
-#wb_ResponsiveMenu1 ul ul li:hover > ul,
-#wb_ResponsiveMenu1 ul li:hover > ul 
-{
-   display: none;
-}
-#wb_ResponsiveMenu1 ul ul li 
-{
-   display: block;
-   width: 100%;
-}
-#wb_ResponsiveMenu1 ul ul ul li 
-{
-   position: static;
-}
-#ResponsiveMenu1-icon 
-{
-   display: block;
    position: absolute;
-   right: 30px;
-   top: 24px;
+   top: 100%;
+   left: 0;
+   z-index: 1000;
+   display: none;
+   float: left;
+   min-width: 160px;
+   padding: 5px 0;
+   margin: 2px 0 0;
+   list-style: none;
+   font-size: 19px;
+   background-color: #F5F5F5;
+   background-image: none;
+   border: 1px solid rgba(79,79,79,1.00);
+   border-radius: 0px;
+   background-clip: padding-box;
 }
-#ResponsiveMenu1-icon span 
+.ThemeableMenu1 .dropdown-menu .divider 
+{
+   height: 1px;
+   margin: 9px 0;
+   overflow: hidden;
+   background-color: #4F4F4F;
+}
+.ThemeableMenu1 .dropdown-menu>li>a 
 {
    display: block;
-   margin-top: 4px;
-   height: 2px;
-   background-color: #4F4F4F;
+   padding: 3px 20px 3px 20px;
+   clear: both;
+   line-height: 1.428571429;
    color: #4F4F4F;
-   width: 24px;
+   white-space: nowrap;
 }
-#wb_ResponsiveMenu1 ul li ul li .toggle:hover
+.ThemeableMenu1 .dropdown-menu>li>a:hover,
+.ThemeableMenu1 .dropdown-menu>li>a:focus 
 {
-   background-color: #CCCCCC;
-   color: #424242;
+   text-decoration: none;
+   color: #2B2B2B;
+   background-color: #EDEDED;
+   background-image: none;
 }
-#wb_ResponsiveMenu1 .toggle .arrow-down 
+.ThemeableMenu1 .dropdown-menu>.active>a,
+.ThemeableMenu1 .dropdown-menu>.active>a:hover,
+.ThemeableMenu1 .dropdown-menu>.active>a:focus 
+{
+   color: #fff;
+   text-decoration: none;
+   outline: 0;
+   background-color: #343A40;
+}
+.ThemeableMenu1 .open>.dropdown-menu 
+{
+   display: block;
+}
+.ThemeableMenu1 .open>a 
+{
+   outline: 0;
+}
+.ThemeableMenu1 .dropdown-header 
+{
+   display: block;
+   padding: 3px 20px;
+   line-height: 1.428571429;
+   color: #aeaeae;
+}
+.ThemeableMenu1 .dropdown-backdrop 
+{
+   position: fixed;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   top: 0;
+   z-index: 990;
+}
+.ThemeableMenu1 .nav>li 
+{
+   position: relative;
+   display: block;
+}
+.ThemeableMenu1 .nav>li>a 
+{
+   position: relative;
+   display: block;
+   padding: 15px 15px 15px 15px;
+}
+.ThemeableMenu1 .nav .open>a,
+.ThemeableMenu1 .nav .open>a:hover,
+.ThemeableMenu1 .nav .open>a:focus 
+{
+   background-color: #ccc;
+   border-color: #343A40;
+}
+.ThemeableMenu1 .nav .nav-divider 
+{
+   height: 1px;
+   margin: 9px 0;
+   overflow: hidden;
+   background-color: #4F4F4F;
+}
+.ThemeableMenu1 .nav>li>a>img 
+{
+   max-width: none;
+}
+.ThemeableMenu1 .nav .caret 
+{
+   border-top-color: #343A40;
+   border-bottom-color: #343A40;
+}
+.ThemeableMenu1
+{
+   position: relative;
+   border: 1px solid transparent;
+   background-color: transparent;
+   background-image: none;
+}
+.ThemeableMenu1:before,
+.ThemeableMenu1:after 
+{
+   content: " ";
+   display: table;
+}
+.ThemeableMenu1:after 
+{
+   clear: both;
+}
+.ThemeableMenu1 .navbar-header:before,
+.ThemeableMenu1 .navbar-header:after 
+{
+   content: " ";
+   display: table;
+}
+.ThemeableMenu1 .navbar-header:after 
+{
+   clear: both;
+}
+.ThemeableMenu1-navbar-collapse 
+{
+   max-height: 340px;
+   overflow-x: visible;
+   -webkit-overflow-scrolling: touch;
+}
+.ThemeableMenu1-navbar-collapse:before,
+.ThemeableMenu1-navbar-collapse:after 
+{
+   content: " ";
+   display: table;
+}
+.ThemeableMenu1-navbar-collapse:after 
+{
+   clear: both;
+}
+.ThemeableMenu1-navbar-collapse.in 
+{
+   overflow-y: auto;
+}
+.ThemeableMenu1 .navbar-toggle 
+{
+   position: relative;
+   float: right;
+   padding: 17px 10px 16px 10px;
+   background-color: transparent;
+   border: 1px solid transparent;
+   border-radius: 0px;
+}
+.ThemeableMenu1 .navbar-toggle .icon-bar 
+{
+   display: block;
+   width: 22px;
+   height: 2px;
+   border-radius: 1px;
+}
+.ThemeableMenu1 .navbar-toggle .icon-bar+.icon-bar 
+{
+   margin-top: 4px;
+}
+.ThemeableMenu1 .navbar-nav 
+{
+   margin: 6px -15px;
+}
+.ThemeableMenu1 .navbar-nav>li>.dropdown-menu 
+{
+   margin-top: 0;
+   border-top-right-radius: 0;
+   border-top-left-radius: 0;
+}
+.ThemeableMenu1 .navbar-nav>li>a 
+{
+   color: #4F4F4F;
+}
+.ThemeableMenu1 .navbar-nav>li>a:hover,
+.ThemeableMenu1 .navbar-nav>li>a:focus 
+{
+   background-color: #EDEDED;
+   background-image: none;
+   color: #2B2B2B;
+   text-decoration: none;
+}
+.ThemeableMenu1 .navbar-nav>.active>a,
+.ThemeableMenu1 .navbar-nav>.active>a:hover,
+.ThemeableMenu1 .navbar-nav>.active>a:focus 
+{
+   color: #2B2B2B;
+   background-color: #EDEDED;
+   background-image: none;
+}
+.ThemeableMenu1 .navbar-toggle 
+{
+   border: 1px solid rgba(79,79,79,0.10);
+}
+.ThemeableMenu1 .navbar-toggle:hover,
+.ThemeableMenu1 .navbar-toggle:focus 
+{
+   background-color: transparent;
+}
+.ThemeableMenu1 .navbar-toggle .icon-bar 
+{
+   background-color: #4F4F4F;
+}
+.ThemeableMenu1-navbar-collapse
+{
+   border-color: rgba(79,79,79,1.00);
+}
+.ThemeableMenu1 .navbar-nav>.dropdown>a:hover .caret,
+.ThemeableMenu1 .navbar-nav>.dropdown>a:focus .caret 
+{
+   border-top-color: #2B2B2B;
+   border-bottom-color: #2B2B2B;
+}
+.ThemeableMenu1 .navbar-nav>.open>a,
+.ThemeableMenu1 .navbar-nav>.open>a:hover,
+.ThemeableMenu1 .navbar-nav>.open>a:focus 
+{
+   background-color: #EDEDED;
+   background-image: none;
+   color: #2B2B2B;
+}
+.ThemeableMenu1 .navbar-nav>.open>a .caret,
+.ThemeableMenu1 .navbar-nav>.open>a:hover .caret,
+.ThemeableMenu1 .navbar-nav>.open>a:focus .caret 
+{
+   border-top-color: #2B2B2B;
+   border-bottom-color: #2B2B2B;
+}
+.ThemeableMenu1 .navbar-nav>.dropdown>a .caret 
 {
    border-top-color: #4F4F4F;
+   border-bottom-color: #4F4F4F;
 }
-#wb_ResponsiveMenu1 .toggle:hover .arrow-down, #wb_ResponsiveMenu1 li .active .arrow-down
-{ 
-   border-top-color: #000000;
-}
-#wb_ResponsiveMenu1 ul li ul li .toggle .arrow-down 
+.ThemeableMenu1 .navbar-link 
 {
-   border-top-color: #FFFFFF;
+   color: #4F4F4F;
 }
-#wb_ResponsiveMenu1 ul li ul li .toggle:hover .arrow-down, #wb_ResponsiveMenu1 ul li ul li .active .arrow-down
-{ 
-   border-top-color: #424242;
-}
-}
-#wb_ResponsiveMenu1.affix
+.ThemeableMenu1 .navbar-link:hover 
 {
-   top: 0 !important;
-   position: fixed !important;
+   color: #2B2B2B;
+}
+.ThemeableMenu1 .navbar-header
+{
+   color: #4F4F4F;
+   height: 51px;
+}
+@media (min-width: 480px) 
+{
+.ThemeableMenu1 .navbar-right .dropdown-menu 
+{
+   right: 0;
+   left: auto;
+}
+.ThemeableMenu1 .navbar-header 
+{
+   float: left;
+}
+.ThemeableMenu1-navbar-collapse 
+{
+   width: auto;
+   border-top: 0;
+   box-shadow: none;
+}
+.ThemeableMenu1-navbar-collapse.collapse 
+{
+   display: block!important;
+   height: auto!important;
+   padding-bottom: 0;
+   overflow: visible!important;
+}
+.ThemeableMenu1-navbar-collapse.in 
+{
+   overflow-y: auto;
+}
+.ThemeableMenu1 .navbar-toggle
+{
+   display: none;
+}
+.ThemeableMenu1 .navbar-nav 
+{
+   float: right;
+   margin: 0;
+}
+.ThemeableMenu1 .navbar-nav>li 
+{
+   float: left;
+}
+.ThemeableMenu1 .container>.navbar-header,
+.ThemeableMenu1 .container>.ThemeableMenu1-navbar-collapse 
+{
+   margin-right: 0;
+   margin-left: 0;
+}
+.ThemeableMenu1 .navbar-nav>.dropdown>a:hover .caret,
+.ThemeableMenu1 .navbar-nav>.dropdown>a:focus .caret 
+{
+   border-top-color: #007BFF;
+   border-bottom-color: #007BFF;
+}
+}
+@media (max-width: 480px) 
+{
+.ThemeableMenu1 
+{
+   border-color: rgba(79,79,79,0.00);
+}
+.ThemeableMenu1 .navbar-nav 
+{
+   margin: 0;
+   background-color: #F5F5F5;
+   background-image: none;
+}
+.ThemeableMenu1 .navbar-nav .open .dropdown-menu 
+{
+   position: static;
+   float: none;
+   width: auto;
+   margin-top: 0;
+   background-color: transparent;
+   border: 0;
+   box-shadow: none;
+}
+.ThemeableMenu1 .navbar-nav .open .dropdown-menu>li>a,
+.ThemeableMenu1 .navbar-nav .open .dropdown-menu .dropdown-header 
+{
+   padding: 5px 15px 5px 25px;
+}
+.ThemeableMenu1 .navbar-nav .open .dropdown-menu>li>a 
+{
+   line-height: 20px;
+}
+.ThemeableMenu1 .navbar-nav .open .dropdown-menu>li>a:hover,
+.ThemeableMenu1 .navbar-nav .open .dropdown-menu>li>a:focus 
+{
+   background-image: none;
+}
+}
+@media (min-width: 480px) 
+{
+.ThemeableMenu1 
+{
+   background-color: transparent;
+   background-image: none;
+   border-color: rgba(79,79,79,0.00);
+   border-radius: 0px;
+}
+.ThemeableMenu1 .navbar-nav>li>a 
+{
+   color: #4F4F4F;
+}
+.ThemeableMenu1 .navbar-nav>li>a:hover,
+.ThemeableMenu1 .navbar-nav>li>a:focus 
+{
+   color: #007BFF;
+   background-color: transparent;
+   background-image: none;
+}
+.ThemeableMenu1 .navbar-nav>.active>a,
+.ThemeableMenu1 .navbar-nav>.active>a:hover,
+.ThemeableMenu1 .navbar-nav>.active>a:focus 
+{
+   color: #007BFF;
+   background-color: transparent;
+   background-image: none;
+}
+.ThemeableMenu1 .navbar-nav>.open>a,
+.ThemeableMenu1 .navbar-nav>.open>a:hover,
+.ThemeableMenu1 .navbar-nav>.open>a:focus 
+{
+   background-color: transparent;
+   background-image: none;
+   color: #007BFF;
+}
+.ThemeableMenu1 .navbar-nav>.dropdown>a:hover .caret 
+{
+   border-top-color: #007BFF;
+   border-bottom-color: #007BFF;
+}
+.ThemeableMenu1 .navbar-nav>.dropdown>a .caret
+{
+   border-top-color: #4F4F4F;
+   border-bottom-color: #4F4F4F;
+}
+.ThemeableMenu1 .navbar-nav > li.active > a > .caret,
+.ThemeableMenu1 .navbar-nav > li.active > a:hover > .caret,
+.ThemeableMenu1 .navbar-nav > li.active > a:focus > .caret
+{
+   border-top-color: #007BFF;
+   border-bottom-color: #007BFF;
+}
+.ThemeableMenu1 .navbar-nav>.open>a .caret,
+.ThemeableMenu1 .navbar-nav>.open>a:hover .caret,
+.ThemeableMenu1 .navbar-nav>.open>a:focus .caret 
+{
+   border-top-color: #007BFF;
+   border-bottom-color: #007BFF;
+}
+.ThemeableMenu1 .navbar-link 
+{
+   color: #4F4F4F;
+}
+.ThemeableMenu1 .navbar-link:hover 
+{
+   color: #fff;
+}
+}
+#wb_Heading3
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid transparent;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 10px 0px 10px 0px;
+   -webkit-animation: transform-bounce-in 1000ms linear 0ms 1 normal both;
+   -moz-animation: transform-bounce-in 1000ms linear 0ms 1 normal both;
+   animation: transform-bounce-in 1000ms linear 0ms 1 normal both;
+   text-align: center;
+}
+#Heading3
+{
+   color: #FFFFFF;
+   font-family: "Comic Sans MS";
+   font-weight: normal;
+   font-size: 64px;
+   margin: 0;
+   text-align: center;
 }
