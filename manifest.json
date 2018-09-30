@@ -1,7 +1,7 @@
 {
 	
-	"short_name": "FOOD",
-	"name": "FOOD",
+	"short_name": "O que comeu?",
+	"name": "O que comeu?",
 	"theme_color": "red",
 	"background_color": "white",
 	"display": "standalone",

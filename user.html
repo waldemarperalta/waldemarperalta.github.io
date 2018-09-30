@@ -1,109 +1,8 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Untitled Page</title>
-<meta name="generator" content="WYSIWYG Web Builder 14 - http://www.wysiwygwebbuilder.com">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="font-awesome.min.css" rel="stylesheet">
-<link href="cook.css" rel="stylesheet">
-<link href="user.css" rel="stylesheet">
-<script src="jquery-1.12.4.min.js"></script>
-<script src="jquery-ui.min.js"></script>
-<script src="transition.min.js"></script>
-<script src="collapse.min.js"></script>
-<script src="dropdown.min.js"></script>
-<script src="wwb14.min.js"></script>
-<script>
-$(document).ready(function()
-{
-   $('#wb_FontAwesomeIcon3').addClass('visibility-hidden');
-   $('#wb_FontAwesomeIcon8').addClass('visibility-hidden');
-   $('#wb_FontAwesomeIcon10').addClass('visibility-hidden');
-   $('#wb_FontAwesomeIcon11').addClass('visibility-hidden');
-   $("a[href*='#LayoutGrid2']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid2').offset().top }, 600, 'linear');
-   });
-   $("a[href*='#header']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
-   });
-   $(document).on('click','.ThemeableMenu1-navbar-collapse.in',function(e)
-   {
-      if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) 
-      {
-         $(this).collapse('hide');
-      }
-   });
-   $("a[href*='#LayoutGrid5']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid5').offset().top }, 600, 'linear');
-   });
-   function FontAwesomeIcon3Scroll()
-   {
-      var $obj = $("#wb_FontAwesomeIcon3");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_FontAwesomeIcon3', 'transform-lightspeed-in', 100, 1000);
-      }
-   }
-   FontAwesomeIcon3Scroll();
-   $(window).scroll(function(event)
-   {
-      FontAwesomeIcon3Scroll();
-   });
-   function FontAwesomeIcon8Scroll()
-   {
-      var $obj = $("#wb_FontAwesomeIcon8");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_FontAwesomeIcon8', 'transform-lightspeed-in', 200, 1000);
-      }
-   }
-   FontAwesomeIcon8Scroll();
-   $(window).scroll(function(event)
-   {
-      FontAwesomeIcon8Scroll();
-   });
-   function FontAwesomeIcon10Scroll()
-   {
-      var $obj = $("#wb_FontAwesomeIcon10");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_FontAwesomeIcon10', 'transform-lightspeed-in', 300, 1000);
-      }
-   }
-   FontAwesomeIcon10Scroll();
-   $(window).scroll(function(event)
-   {
-      FontAwesomeIcon10Scroll();
-   });
-   function FontAwesomeIcon11Scroll()
-   {
-      var $obj = $("#wb_FontAwesomeIcon11");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_FontAwesomeIcon11', 'transform-lightspeed-in', 400, 1000);
-      }
-   }
-   FontAwesomeIcon11Scroll();
-   $(window).scroll(function(event)
-   {
-      FontAwesomeIcon11Scroll();
-   });
-});
-</script>
 
-
-<link rel="manifest" href="manifest.json">
+   <link rel="manifest" href="manifest.json">
 
 <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -119,91 +18,71 @@ $(document).ready(function()
     <!-- Tile icon for Win8 (144x144 + tile color) -->
     <meta name="msapplication-TileImage" content="imgas/icon.png">
     <meta name="msapplication-TileColor" content="#F77F00">
+<meta charset="utf-8">
+<title>USER</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="social.css" rel="stylesheet">
+<link href="user.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script>   
+   $(document).ready(function()
+   {
+      $("a[href*='#LayoutGrid1']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid1').offset().top }, 600, 'linear');
+      });
+      var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+      if (iOS)
+      {
+         $('#wb_LayoutGrid1').css('background-attachment', 'scroll');
+      }
+   });
+</script>
 </head>
 <body>
-<div id="wb_LayoutGrid2">
-<div id="LayoutGrid2">
-<div class="row">
-<div class="col-1">
-<div id="wb_IconFont1" style="display:inline-block;width:130px;height:163px;text-align:center;z-index:0;">
-<div id="IconFont1"><i class="material-icons">&#xe853;</i></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid7">
-<div id="LayoutGrid7">
-<div class="row">
-<div class="col-1">
-</div>
-</div>
-</div>
-</div>
-<div id="wb_header">
-<div id="header">
-<div class="row">
-<div class="col-1">
-</div>
-<div class="col-2">
-<div id="wb_ThemeableMenu1" style="display:inline-block;width:100%;z-index:1001;">
-<div id="ThemeableMenu1" class="ThemeableMenu1" style="width:100%;height:auto !important;">
-<div class="container">
-<div class="navbar-header">
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".ThemeableMenu1-navbar-collapse">
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-</div>
-<div class="ThemeableMenu1-navbar-collapse collapse">
-<ul class="nav navbar-nav">
-<li class="">
-<a href="./inicio.html#home">Home</a>
-</li>
-<li class="">
-<a href="./oquecomeu.html">O QUE COMEU?</a>
-</li>
-<li class="">
-<a href="#LayoutGrid2">PUBS</a>
-</li>
-<li class="">
-<a href="./user.html">USER</a>
-</li>
-<li class="">
-<a href="#LayoutGrid5">Links</a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid5">
-<div id="LayoutGrid5">
-<div class="row">
-<div class="col-1">
-<div id="wb_FontAwesomeIcon3" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:2;">
-<a href="http://www.facebook.com/poema.do.chato"><div id="FontAwesomeIcon3"><i class="fa fa-facebook"></i></div></a>
-</div>
-<div id="wb_FontAwesomeIcon8" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:3;">
-<a href="mailto:oquecomeu@gmail.com"><div id="FontAwesomeIcon8"><i class="fa fa-envelope"></i></div></a>
-</div>
-<div id="wb_FontAwesomeIcon10" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:4;">
-<a href="http://instagram.com/waldemar_peralta"><div id="FontAwesomeIcon10"><i class="fa fa-instagram"></i></div></a>
-</div>
-<div id="wb_FontAwesomeIcon11" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:5;">
-<a href="tel:996611738"><div id="FontAwesomeIcon11"><i class="fa fa-phone"></i></div></a>
-</div>
-<div id="wb_Text17">
-<span style="color:#696969;font-family:Arial;font-size:16px;">Copyright 2018 Waldemar Peralta <br>All Rights Reserved </span>
-</div>
-</div>
-</div>
-</div>
-</div>
+   <div id="Layer1" style="position:fixed;text-align:left;left:auto;right:0px;top:0px;width:71px;height:74px;z-index:6;z-index:11111;">
+   </div>
+   <div id="wb_LayoutGrid1">
+      <div id="LayoutGrid1">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_IconFont1" style="display:inline-block;width:130px;height:163px;text-align:center;z-index:0;">
+                  <div id="IconFont1"><i class="material-icons">&#xe853;</i></div>
+               </div>
+               <div id="wb_Heading2" style="display:inline-block;width:100%;z-index:1;">
+                  <h1 id="Heading2">User name</h1>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid22">
+      <div id="LayoutGrid22">
+         <div class="row">
+            <div class="col-1">
+               <hr id="Line12" style="display:block;width:100%;z-index:2;">
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid29">
+      <div id="LayoutGrid29">
+         <div class="row">
+            <div class="col-1">
+               <hr id="Line15" style="display:block;width:100%;z-index:3;">
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="Layer9" style="position:fixed;text-align:left;left:11px;top:auto;bottom:11px;width:50px;height:50px;z-index:10;">
+      <div id="wb_FontAwesomeIcon2" style="position:absolute;left:9px;top:8px;width:24px;height:24px;text-align:center;z-index:4;">
+         <a href="javascript:history.back()"><div id="FontAwesomeIcon2"><i class="fa fa-arrow-left"></i></div></a></div>
+   </div>
+   <div id="Layer10" style="position:fixed;text-align:left;left:11px;top:11px;width:50px;height:50px;z-index:11;">
+      <div id="wb_FontAwesomeIcon1" style="position:absolute;left:9px;top:8px;width:24px;height:24px;text-align:center;z-index:5;">
+         <a href="#home"><div id="FontAwesomeIcon1"><i class="fa fa-gears"></i></div></a></div>
+   </div>
 </body>
 </html>
