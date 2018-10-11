@@ -13,6 +13,7 @@
 <script src="affix.min.js"></script>
 <script src="scrollspy.min.js"></script>
 <script src="jquery-ui.min.js"></script>
+<script src="wwb14.min.js"></script>
 <script>
 $(document).ready(function()
 {
@@ -56,34 +57,39 @@ $(document).ready(function()
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#skills').offset().top }, 600, 'easeOutSine');
    });
-   $("#progressbar_html").progressbar(
+   $("a[href*='#FlexContainer2']").click(function(event)
    {
-      value: 90,
-      change: function() 
-      {
-         $("#progressbar_html-label").text($(this).progressbar('value') + '%');
-      }
-   });
-   $("#progressbar_uidesign").progressbar(
-   {
-      value: 80,
-      change: function() 
-      {
-         $("#progressbar_uidesign-label").text($(this).progressbar('value') + '%');
-      }
-   });
-   $("#progressbar_jquery").progressbar(
-   {
-      value: 60,
-      change: function() 
-      {
-         $("#progressbar_jquery-label").text($(this).progressbar('value') + '%');
-      }
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#FlexContainer2').offset().top }, 600, 'easeOutSine');
    });
    $("a[href*='#footer']").click(function(event)
    {
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_footer').offset().top }, 600, 'easeOutSine');
+   });
+   $("#Progressbar4").progressbar(
+   {
+      value: 90,
+      change: function() 
+      {
+         $("#Progressbar4-label").text($(this).progressbar('value') + '%');
+      }
+   });
+   $("#Progressbar5").progressbar(
+   {
+      value: 80,
+      change: function() 
+      {
+         $("#Progressbar5-label").text($(this).progressbar('value') + '%');
+      }
+   });
+   $("#Progressbar6").progressbar(
+   {
+      value: 60,
+      change: function() 
+      {
+         $("#Progressbar6-label").text($(this).progressbar('value') + '%');
+      }
    });
 });
 </script>
@@ -135,9 +141,10 @@ $(document).ready(function()
 <li><a role="menuitem" href="#LayoutGrid2"><i class="fa fa-home fa-2x">&nbsp;</i><br>Home</a></li>
 <li><a role="menuitem" href="#services"><i class="fa fa-thumb-tack fa-2x">&nbsp;</i><br>Ideia</a></li>
 <li><a role="menuitem" href="#LayoutGrid4"><i class="fa fa-comment fa-2x">&nbsp;</i><br>Objectivo</a></li>
+<li><a role="menuitem" href="#skills"><i class="fa fa-pie-chart fa-2x">&nbsp;</i><br>MK</a></li>
 <li><a role="menuitem" href="#"><i class="fa fa-file-text fa-2x">&nbsp;</i><br>Dicas</a></li>
+<li><a role="menuitem" href="#"><i class="fa fa-sign-in fa-2x">&nbsp;</i><br>Sign-in</a></li>
 <li><a role="menuitem" href="#footer"><i class="fa fa-gears fa-2x">&nbsp;</i><br>Sobre</a></li>
-<li><a role="menuitem" href="#"><i class="fa fa-user-circle-o fa-2x">&nbsp;</i><br>User</a></li>
 </ul>
 
 </div>
@@ -149,6 +156,52 @@ $(document).ready(function()
 <div id="LayoutGrid2">
 <div class="row">
 <div class="col-1">
+<div id="wb_JavaScript2" style="display:inline-block;width:100%;z-index:1;">
+<div style="color:#FFFFFF;font-size:36px;font-family:Arial;font-weight:bold;font-style:normal;text-align:center;text-decoration:none" id="typewriter-deluxe">
+<span id="typewriter-text" style="border-right: 0.08em solid #FFFFFF;"></span>
+</div>
+<script>
+var data = "MEU KUMBÚ^uma solução a nivel tecnologico...^Created ";
+var lines = data.split('^');
+var reverse = false;
+var index = 0;
+var text = '';
+var typeWriterElement = document.getElementById("typewriter-text");
+function typeWriterDeluxe() 
+{
+   var i = index % lines.length;
+   var line = lines[i];
+   if (reverse) 
+   {
+      text = line.substring(0, text.length - 1);
+   } 
+   else 
+   {
+      text = line.substring(0, text.length + 1);
+   }
+   typeWriterElement.innerHTML = text;
+   var timeout = 250 - Math.random() * (250/2);
+   if (reverse) 
+   { 
+      timeout /= 2; 
+   }
+   if (!reverse && text === line) 
+   {
+      timeout = 3000;
+      reverse = true;
+   } 
+   else 
+   if (reverse && text === '') 
+   {
+      reverse = false;
+      index++;
+      timeout = 500;
+   }
+   setTimeout(typeWriterDeluxe, timeout);
+}
+typeWriterDeluxe();
+</script>
+</div>
 </div>
 </div>
 </div>
@@ -157,7 +210,7 @@ $(document).ready(function()
 <nav id="LayoutGrid3">
 <div class="row">
 <div class="col-1">
-<div id="wb_Heading1" style="display:inline-block;width:100%;z-index:1;">
+<div id="wb_Heading1" style="display:inline-block;width:100%;z-index:2;">
 <h1 id="Heading1">MEU KUMBÚ</h1>
 </div>
 <div id="wb_Text1">
@@ -171,8 +224,8 @@ $(document).ready(function()
 <div id="LayoutGrid5">
 <div class="row">
 <div class="col-1">
-<div id="wb_FontAwesomeIcon3" style="display:inline-block;width:52px;height:47px;text-align:center;z-index:3;">
-<a href="#features"><div id="FontAwesomeIcon3"><i class="fa fa-question-circle"></i></div></a>
+<div id="wb_FontAwesomeIcon3" style="display:inline-block;width:52px;height:47px;text-align:center;z-index:4;">
+<a href="#features"><div id="FontAwesomeIcon3"><i class="fa fa-chevron-down"></i></div></a>
 </div>
 </div>
 </div>
@@ -183,31 +236,31 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
-<div id="wb_Heading2" style="display:inline-block;width:100%;z-index:4;">
+<div id="wb_Heading2" style="display:inline-block;width:100%;z-index:5;">
 <h2 id="Heading2">Quanto tenho gasto?</h2>
 </div>
-<div id="wb_FontAwesomeIcon4" style="display:inline-block;width:88px;height:73px;text-align:center;z-index:5;">
+<div id="wb_FontAwesomeIcon4" style="display:inline-block;width:88px;height:73px;text-align:center;z-index:6;">
 <div id="FontAwesomeIcon4"><i class="fa fa-calculator"></i></div>
 </div>
 </div>
 </div>
 <div class="col-2">
 <div class="col-2-padding">
-<div id="wb_Heading3" style="display:inline-block;width:100%;z-index:6;">
+<div id="wb_Heading3" style="display:inline-block;width:100%;z-index:7;">
 <h2 id="Heading3">Com o que tenho gasto?</h2>
 </div>
-<div id="wb_FontAwesomeIcon1" style="display:inline-block;width:88px;height:73px;text-align:center;z-index:7;">
-<div id="FontAwesomeIcon1"><i class="fa fa-line-chart"></i></div>
+<div id="wb_FontAwesomeIcon2" style="display:inline-block;width:88px;height:73px;text-align:center;z-index:8;">
+<div id="FontAwesomeIcon2"><i class="fa fa-pie-chart"></i></div>
 </div>
 </div>
 </div>
 <div class="col-3">
 <div class="col-3-padding">
-<div id="wb_Heading4" style="display:inline-block;width:100%;z-index:8;">
+<div id="wb_Heading4" style="display:inline-block;width:100%;z-index:9;">
 <h2 id="Heading4">Como tenho gasto?</h2>
 </div>
-<div id="wb_FontAwesomeIcon2" style="display:inline-block;width:88px;height:73px;text-align:center;z-index:9;">
-<div id="FontAwesomeIcon2"><i class="fa fa-pie-chart"></i></div>
+<div id="wb_FontAwesomeIcon1" style="display:inline-block;width:88px;height:73px;text-align:center;z-index:10;">
+<div id="FontAwesomeIcon1"><i class="fa fa-line-chart"></i></div>
 </div>
 </div>
 </div>
@@ -219,7 +272,7 @@ $(document).ready(function()
 <div id="services">
 <div class="row">
 <div class="col-1">
-<div id="wb_FontAwesomeIcon5" style="display:inline-block;width:88px;height:73px;text-align:center;z-index:10;">
+<div id="wb_FontAwesomeIcon5" style="display:inline-block;width:88px;height:73px;text-align:center;z-index:11;">
 <div id="FontAwesomeIcon5"><i class="fa fa-gears"></i></div>
 </div>
 <div id="wb_service-text">
@@ -234,7 +287,7 @@ $(document).ready(function()
 <div id="LayoutGrid4">
 <div class="row">
 <div class="col-1">
-<div id="wb_FontAwesomeIcon6" style="display:inline-block;width:88px;height:73px;text-align:center;z-index:12;">
+<div id="wb_FontAwesomeIcon6" style="display:inline-block;width:88px;height:73px;text-align:center;z-index:13;">
 <div id="FontAwesomeIcon6"><i class="fa fa-search-plus"></i></div>
 </div>
 <div id="wb_Text2">
@@ -245,22 +298,50 @@ $(document).ready(function()
 </div>
 </div>
 <div id="skills">
-<div id="wb_Heading5" style="display:inline-block;z-index:14;">
-<h1 id="Heading5">Relatórios</h1>
+<div id="wb_Text4">
+<span style="color:#000000;font-family:Arial;font-size:32px;line-height:37px;"><strong>APLICATIVO</strong></span><span style="color:#000000;font-family:Arial;font-size:13px;line-height:17px;"><br></span><span style="color:#000000;font-family:Arial;font-size:15px;line-height:18px;"><br></span><span style="color:#000000;font-family:Arial;font-size:16px;line-height:18px;"><br>Preview or publish the page to see the result!Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.</span>
 </div>
-<label for="" id="Label5" style="display:block;height:28px;height:28px;line-height:20px;z-index:15;">HTML/CSS:</label>
-<div id="progressbar_html"  style="display:inline-block;height:20px;position:relative;">
-<div id="progressbar_html-label">90%</div>
 </div>
-<label for="" id="Label6" style="display:block;height:28px;height:28px;line-height:20px;z-index:17;">UI Design:</label>
-<div id="progressbar_uidesign"  style="display:inline-block;height:20px;position:relative;">
-<div id="progressbar_uidesign-label">80%</div>
+<div id="wb_LayoutGrid7">
+<div id="LayoutGrid7">
+<div class="row">
+<div class="col-1">
 </div>
-<label for="" id="Label7" style="display:block;height:28px;height:28px;line-height:20px;z-index:19;">jQuery:</label>
-<div id="progressbar_jquery"  style="display:inline-block;height:20px;position:relative;">
-<div id="progressbar_jquery-label">60%</div>
+<div class="col-2">
+</div>
+<div class="col-3">
+</div>
+<div class="col-4">
+</div>
+</div>
+</div>
+</div>
+<div id="FlexContainer2">
+<div id="wb_Heading8" style="display:inline-block;z-index:16;">
+<h1 id="Heading8">Relatórios</h1>
+</div>
+<label for="" id="Label4" style="display:block;height:28px;height:28px;line-height:20px;z-index:17;">HTML/CSS:</label>
+<div id="Progressbar4"  style="display:inline-block;height:20px;position:relative;">
+<div id="Progressbar4-label">90%</div>
+</div>
+<label for="" id="Label8" style="display:block;height:28px;height:28px;line-height:20px;z-index:19;">UI Design:</label>
+<div id="Progressbar5"  style="display:inline-block;height:20px;position:relative;">
+<div id="Progressbar5-label">80%</div>
+</div>
+<label for="" id="Label9" style="display:block;height:28px;height:28px;line-height:20px;z-index:21;">jQuery:</label>
+<div id="Progressbar6"  style="display:inline-block;height:20px;position:relative;">
+<div id="Progressbar6-label">60%</div>
 </div>
 
+</div>
+<div id="wb_LayoutGrid6">
+<div id="LayoutGrid6">
+<div class="row">
+<div class="col-1">
+<input type="submit" id="about-button" onclick="$('html, body').stop().animate({ scrollTop: $('#wb_services').offset().top }, 600, 'easeOutSine');return false;" onmousemove="SetStyle('about-button', 'CustomStyle');return false;" name="" value="Abrir App" style="display:inline-block;width:156px;height:37px;z-index:24;cursor:pointer">
+</div>
+</div>
+</div>
 </div>
 <div id="wb_footer">
 <div id="footer-overlay"></div>
@@ -270,7 +351,7 @@ $(document).ready(function()
 <div id="wb_Text11">
 <span style="color:#FFFFFF;"><strong>EQUIPA</strong></span>
 </div>
-<div id="wb_Card5" style="display:flex;width:100%;z-index:23;">
+<div id="wb_Card5" style="display:flex;width:100%;z-index:26;">
    <div id="Card5-card-body">
       <img id="Card5-card-item0" src="images/perfil.PNG" alt="" title="">
       <div id="Card5-card-item1">John Jones</div>
@@ -281,7 +362,7 @@ $(document).ready(function()
    </div>
 
 </div>
-<div id="wb_Card4" style="display:flex;width:100%;z-index:24;">
+<div id="wb_Card4" style="display:flex;width:100%;z-index:27;">
    <div id="Card4-card-body">
       <img id="Card4-card-item0" src="UUVI7064.jpeg" alt="" title="">
       <div id="Card4-card-item1">Valdemar Lemos</div>
@@ -306,7 +387,7 @@ $(document).ready(function()
 <div id="wb_Text3">
 <span style="color:#FFFFFF;"><strong>NAVEGAÇÃO</strong></span>
 </div>
-<div id="wb_CssMenu2" style="display:inline-block;width:100%;z-index:28;">
+<div id="wb_CssMenu2" style="display:inline-block;width:100%;z-index:31;">
 <ul role="menubar">
 <li class="firstmain"><a role="menuitem" href="#" target="_self">Home</a>
 </li>
@@ -326,7 +407,7 @@ $(document).ready(function()
 <div id="wb_Text5">
 <span style="color:#FFFFFF;"><strong>FOLLOW US</strong></span>
 </div>
-<div id="wb_CssMenu5" style="display:inline-block;width:100%;z-index:30;">
+<div id="wb_CssMenu5" style="display:inline-block;width:100%;z-index:33;">
 <ul role="menubar">
 <li class="firstmain"><a role="menuitem" href="#" target="_self">Facebook</a>
 </li>
@@ -337,14 +418,6 @@ $(document).ready(function()
 </ul>
 
 </div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid6">
-<div id="LayoutGrid6">
-<div class="row">
-<div class="col-1">
 </div>
 </div>
 </div>
