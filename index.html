@@ -10,7 +10,6 @@
 <link href="meucumbu.css" rel="stylesheet">
 <link href="index.css" rel="stylesheet">
 <script src="jquery-1.12.4.min.js"></script>
-<script src="affix.min.js"></script>
 <script src="scrollspy.min.js"></script>
 <script src="jquery-ui.min.js"></script>
 <script src="wb.parallax.min.js"></script>
@@ -22,7 +21,6 @@ $(document).ready(function()
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid2').offset().top }, 600, 'linear');
    });
-   $("#wb_ResponsiveMenu1").affix({offset:{top: $("#wb_ResponsiveMenu1").offset().top}});
    $("#wb_ResponsiveMenu1 ul li a").click(function(event)
    {
       $("#wb_ResponsiveMenu1 input").prop("checked", false);
@@ -106,6 +104,11 @@ $(document).ready(function()
       {
          $("#Progressbar6-label").text($(this).progressbar('value') + '%');
       }
+   });
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
    });
 });
 </script>
@@ -343,20 +346,11 @@ typeWriterDeluxe();
 </div>
 </div>
 </div>
-<div id="wb_LayoutGrid9">
-<div id="LayoutGrid9">
-<div class="row">
-<div class="col-1">
-<hr id="Line1" style="display:block;width: 100%;z-index:24;">
-</div>
-</div>
-</div>
-</div>
 <div id="wb_spaceGrid">
 <div id="spaceGrid">
 <div class="row">
 <div class="col-1">
-<div id="wb_spaceHeading1" style="display:inline-block;width:100%;z-index:25;">
+<div id="wb_spaceHeading1" style="display:inline-block;width:100%;z-index:24;">
 <h2 id="spaceHeading1">DICAS</h2>
 </div>
 </div>
@@ -368,7 +362,7 @@ typeWriterDeluxe();
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
-<div id="wb_factsCard1" style="display:flex;width:100%;z-index:26;">
+<div id="wb_factsCard1" style="display:flex;width:100%;z-index:25;">
    <div id="factsCard1-card-body">
       <div id="factsCard1-card-item0"><i class="fa fa-smile-o"></i></div>
       <div id="factsCard1-card-item1">Fun!</div>
@@ -380,7 +374,7 @@ typeWriterDeluxe();
 </div>
 <div class="col-2">
 <div class="col-2-padding">
-<div id="wb_factsCard2" style="display:flex;width:100%;z-index:27;">
+<div id="wb_factsCard2" style="display:flex;width:100%;z-index:26;">
    <div id="factsCard2-card-body">
       <div id="factsCard2-card-item0"><i class="fa fa-snowflake-o"></i></div>
       <div id="factsCard2-card-item1">Snow</div>
@@ -392,7 +386,7 @@ typeWriterDeluxe();
 </div>
 <div class="col-3">
 <div class="col-3-padding">
-<div id="wb_factsCard3" style="display:flex;width:100%;z-index:28;">
+<div id="wb_factsCard3" style="display:flex;width:100%;z-index:27;">
    <div id="factsCard3-card-body">
       <div id="factsCard3-card-item0"><i class="fa fa-thermometer-empty"></i></div>
       <div id="factsCard3-card-item1">Cold...</div>
@@ -410,26 +404,26 @@ typeWriterDeluxe();
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
-<div id="wb_contactHeading1" style="display:inline-block;width:100%;z-index:29;">
+<div id="wb_contactHeading1" style="display:inline-block;width:100%;z-index:28;">
 <h2 id="contactHeading1">Alguma Pergunta? <br></h2>
 </div>
 <div id="wb_contactText1">
 <span style="color:#4F4F4F;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh</span>
 </div>
-<div id="wb_contactIcon1" style="display:inline-block;width:64px;height:64px;text-align:center;z-index:31;">
+<div id="wb_contactIcon1" style="display:inline-block;width:64px;height:64px;text-align:center;z-index:30;">
 <div id="contactIcon1"><i class="fa fa-envelope-o"></i></div>
 </div>
 </div>
 </div>
 <div class="col-2">
 <div class="col-2-padding">
-<label for="JavaScript2" id="Label1" style="display:block;width:100%;z-index:32;">Name</label>
-<input type="text" id="editboxName" style="display:block;width: 100%;height:34px;z-index:33;" name="Editbox1" value="" spellcheck="false">
-<label for="LayoutGrid8" id="Label2" style="display:block;width:100%;z-index:34;">Email</label>
-<input type="text" id="editboxEmail" style="display:block;width: 100%;height:34px;z-index:35;" name="email" value="" spellcheck="false">
-<label for="contact" id="Label3" style="display:block;width:100%;z-index:36;">Message</label>
-<textarea name="message" id="editboxMessage" style="display:block;width: 100%;;height:100px;z-index:37;" rows="4" cols="61" spellcheck="false"></textarea>
-<input type="submit" id="Button1" name="" value="Enviar" style="display:inline-block;width:92px;height:39px;z-index:38;">
+<label for="JavaScript2" id="Label1" style="display:block;width:100%;z-index:31;">Name</label>
+<input type="text" id="editboxName" style="display:block;width: 100%;height:34px;z-index:32;" name="Editbox1" value="" spellcheck="false">
+<label for="LayoutGrid8" id="Label2" style="display:block;width:100%;z-index:33;">Email</label>
+<input type="text" id="editboxEmail" style="display:block;width: 100%;height:34px;z-index:34;" name="email" value="" spellcheck="false">
+<label for="contact" id="Label3" style="display:block;width:100%;z-index:35;">Message</label>
+<textarea name="message" id="editboxMessage" style="display:block;width: 100%;;height:100px;z-index:36;" rows="4" cols="61" spellcheck="false"></textarea>
+<input type="submit" id="Button1" name="" value="Enviar" style="display:inline-block;width:92px;height:39px;z-index:37;">
 </div>
 </div>
 </div>
@@ -443,7 +437,7 @@ typeWriterDeluxe();
 <div id="wb_Text11">
 <span style="color:#FFFFFF;"><strong>EQUIPA</strong></span>
 </div>
-<div id="wb_Card5" style="display:flex;width:100%;z-index:40;">
+<div id="wb_Card5" style="display:flex;width:100%;z-index:39;">
    <div id="Card5-card-body">
       <img id="Card5-card-item0" src="images/sem3 nome.png" alt="" title="">
       <div id="Card5-card-item1">Flávio Geremias</div>
@@ -454,7 +448,7 @@ typeWriterDeluxe();
    </div>
 
 </div>
-<div id="wb_Card4" style="display:flex;width:100%;z-index:41;">
+<div id="wb_Card4" style="display:flex;width:100%;z-index:40;">
    <div id="Card4-card-body">
       <img id="Card4-card-item0" src="UUVI7064.jpeg" alt="" title="">
       <div id="Card4-card-item1">Valdemar Lemos</div>
@@ -479,7 +473,7 @@ typeWriterDeluxe();
 <div id="wb_Text3">
 <span style="color:#FFFFFF;"><strong>NAVEGAÇÃO</strong></span>
 </div>
-<div id="wb_CssMenu2" style="display:inline-block;width:100%;z-index:45;">
+<div id="wb_CssMenu2" style="display:inline-block;width:100%;z-index:44;">
 <ul role="menubar">
 <li class="firstmain"><a role="menuitem" href="#" target="_self">Home</a>
 </li>
@@ -499,7 +493,7 @@ typeWriterDeluxe();
 <div id="wb_Text5">
 <span style="color:#FFFFFF;"><strong>FOLLOW US</strong></span>
 </div>
-<div id="wb_CssMenu5" style="display:inline-block;width:100%;z-index:47;">
+<div id="wb_CssMenu5" style="display:inline-block;width:100%;z-index:46;">
 <ul role="menubar">
 <li class="firstmain"><a role="menuitem" href="#" target="_self">Facebook</a>
 </li>
@@ -519,26 +513,23 @@ typeWriterDeluxe();
 <div class="row">
 <div class="col-1">
 <div id="wb_Text16">
-<span style="color:#000000;">Copyright © 2018 WYSIWYG Web Builder.&nbsp; All Rights Reserved</span>
+<span style="color:#000000;">Copyright © 2018.&nbsp; All Rights Reserved</span>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="wb_LayoutGrid10">
-<div id="LayoutGrid10">
+<div id="wb_header">
+<div id="header">
 <div class="row">
 <div class="col-1">
-<div id="wb_FontAwesomeIcon7" style="display:inline-block;width:88px;height:60px;text-align:center;z-index:49;">
-<div id="FontAwesomeIcon7"><i class="fa fa-line-chart"></i></div>
-</div>
-<div id="wb_Heading5" style="display:inline-block;width:100%;z-index:50;">
-<h1 id="Heading5">Meu Kumbú</h1>
+<div id="wb_FontAwesomeIcon7" style="display:inline-block;width:88px;height:54px;text-align:center;z-index:48;">
+<a href="./index.html"><div id="FontAwesomeIcon7"><i class="fa fa-line-chart"></i></div></a>
 </div>
 </div>
 <div class="col-2">
-<div id="wb_ResponsiveMenu1" style="display:inline-block;width:100%;z-index:51;">
-<label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title"><span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
+<div id="wb_ResponsiveMenu1" style="display:inline-block;width:100%;z-index:49;">
+<label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">MEU KUMBÚ<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
 <input type="checkbox" id="ResponsiveMenu1-submenu">
 <ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
 <li><a role="menuitem" href="#LayoutGrid2"><i class="fa fa-home fa-2x">&nbsp;</i><br>Home</a></li>
