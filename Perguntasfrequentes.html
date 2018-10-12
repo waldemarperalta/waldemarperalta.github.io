@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 14 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="meucumbu.css" rel="stylesheet">
+<link href="Perguntasfrequentes.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="affix.min.js"></script>
+<script src="scrollspy.min.js"></script>
+<script src="wwb14.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#spaceIcon').addClass('visibility-hidden');
+   $('#wb_spaceHeading1').addClass('visibility-hidden');
+   $('#wb_spaceHeading2').addClass('visibility-hidden');
+   $("#wb_ResponsiveMenu1").affix({offset:{top: $("#wb_ResponsiveMenu1").offset().top}});
+   $("#wb_ResponsiveMenu1 ul li a").click(function(event)
+   {
+      $("#wb_ResponsiveMenu1 input").prop("checked", false);
+   });
+   function spaceBookmarkScroll()
+   {
+      var $obj = $("#wb_spaceBookmark");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('spaceIcon', 'puff-in', 0, 500);
+         AnimateCss('wb_spaceHeading1', 'puff-in', 500, 500);
+         AnimateCss('wb_spaceHeading2', 'puff-in', 1000, 500);
+      }
+   }
+   spaceBookmarkScroll();
+   $(window).scroll(function(event)
+   {
+      spaceBookmarkScroll();
+   });
+});
+</script>
+</head>
+<body data-spy="scroll">
+<div id="wb_LayoutGrid1">
+<header id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_ResponsiveMenu1" style="display:inline-block;width:100%;z-index:0;">
+<label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">Novo Registro<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
+<input type="checkbox" id="ResponsiveMenu1-submenu">
+<ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
+<li><a role="menuitem" href="#LayoutGrid2"><i class="fa fa-home fa-2x">&nbsp;</i><br>Home</a></li>
+<li><a role="menuitem" href="#LayoutGrid4"><i class="fa fa-money fa-2x">&nbsp;</i><br>Novo&nbsp;</a></li>
+<li>
+<label for="ResponsiveMenu1-submenu-0" class="toggle"><i class="fa fa-gears fa-2x">&nbsp;</i>Gastos&nbsp;Detalhados<b class="arrow-down"></b></label>
+<a role="menuitem" href="#footer"><i class="fa fa-gears fa-2x">&nbsp;</i><br>Gastos&nbsp;Detalhados<b class="arrow-down"></b></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-0">
+<ul role="menu">
+<li><a role="menuitem" href="http://">Diarios</a></li>
+<li><a role="menuitem" href="http://">Semanais</a></li>
+<li><a role="menuitem" href="http://">Mensais</a></li>
+<li><a role="menuitem" href="http://">Anuais</a></li>
+</ul>
+</li>
+<li><a role="menuitem" href="#"><i class="fa fa-file-text fa-2x">&nbsp;</i><br>Dicas</a></li>
+<li><a role="menuitem" href="#"><i class="fa fa-sign-in fa-2x">&nbsp;</i><br>Sign-in</a></li>
+<li><a role="menuitem" href="http://"><i class="fa fa-comment fa-2x">&nbsp;</i><br>Perguntas&nbsp;Frequentes</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</header>
+</div>
+<div id="wb_spaceGrid">
+<div id="spaceGrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_FontAwesomeIcon7" style="display:inline-block;width:88px;height:73px;text-align:center;z-index:1;">
+<div id="FontAwesomeIcon7"><i class="fa fa-pie-chart"></i></div>
+</div>
+<div id="wb_spaceHeading1" style="display:inline-block;width:100%;z-index:2;">
+<h2 id="spaceHeading1">Perguntas frequentes</h2>
+</div>
+<div id="wb_spaceHeading2" style="display:inline-block;width:100%;z-index:3;">
+<h2 id="spaceHeading2">Praesent libero. Sed cursus ante dapibus diam.</h2>
+</div>
+<div id="wb_spaceBookmark" style="display:inline-block;width:100%;z-index:4;">
+<a id="spaceBookmark" style="visibility:hidden;">&nbsp;</a>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid8">
+<div id="LayoutGrid8">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text16">
+<span style="color:#000000;">Copyright © 2018 WYSIWYG Web Builder.&nbsp; All Rights Reserved</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

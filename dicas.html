@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 14 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="meucumbu.css" rel="stylesheet">
+<link href="dicas.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="affix.min.js"></script>
+<script src="scrollspy.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="wwb14.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#wb_spaceIcon').addClass('visibility-hidden');
+   $('#wb_spaceHeading1').addClass('visibility-hidden');
+   $('#wb_spaceHeading2').addClass('visibility-hidden');
+   $("#wb_ResponsiveMenu1").affix({offset:{top: $("#wb_ResponsiveMenu1").offset().top}});
+   $("#wb_ResponsiveMenu1 ul li a").click(function(event)
+   {
+      $("#wb_ResponsiveMenu1 input").prop("checked", false);
+   });
+   $("a[href*='#facts']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_facts').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#LayoutGrid2']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid2').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function spaceBookmarkScroll()
+   {
+      var $obj = $("#wb_spaceBookmark");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_spaceIcon', 'puff-in', 0, 500);
+         AnimateCss('wb_spaceHeading1', 'puff-in', 500, 500);
+         AnimateCss('wb_spaceHeading2', 'puff-in', 1000, 500);
+      }
+   }
+   spaceBookmarkScroll();
+   $(window).scroll(function(event)
+   {
+      spaceBookmarkScroll();
+   });
+});
+</script>
+</head>
+<body data-spy="scroll">
+<div id="wb_LayoutGrid1">
+<header id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_ResponsiveMenu1" style="display:inline-block;width:100%;z-index:0;">
+<label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">Novo Registro<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
+<input type="checkbox" id="ResponsiveMenu1-submenu">
+<ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
+<li><a role="menuitem" href="#LayoutGrid2"><i class="fa fa-home fa-2x">&nbsp;</i><br>Home</a></li>
+<li><a role="menuitem" href="#LayoutGrid4"><i class="fa fa-money fa-2x">&nbsp;</i><br>Novo&nbsp;</a></li>
+<li>
+<label for="ResponsiveMenu1-submenu-0" class="toggle"><i class="fa fa-gears fa-2x">&nbsp;</i>Gastos&nbsp;Detalhados<b class="arrow-down"></b></label>
+<a role="menuitem" href="#footer"><i class="fa fa-gears fa-2x">&nbsp;</i><br>Gastos&nbsp;Detalhados<b class="arrow-down"></b></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-0">
+<ul role="menu">
+<li><a role="menuitem" href="http://">Diarios</a></li>
+<li><a role="menuitem" href="http://">Semanais</a></li>
+<li><a role="menuitem" href="http://">Mensais</a></li>
+<li><a role="menuitem" href="http://">Anuais</a></li>
+</ul>
+</li>
+<li><a role="menuitem" href="#"><i class="fa fa-file-text fa-2x">&nbsp;</i><br>Dicas</a></li>
+<li><a role="menuitem" href="#"><i class="fa fa-sign-in fa-2x">&nbsp;</i><br>Sign-in</a></li>
+<li><a role="menuitem" href="http://"><i class="fa fa-comment fa-2x">&nbsp;</i><br>Perguntas&nbsp;Frequentes</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</header>
+</div>
+<div id="wb_spaceGrid">
+<div id="spaceGrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_spaceIcon" style="display:inline-block;width:100px;height:100px;text-align:center;z-index:1;">
+<div id="spaceIcon"><i class="fa fa-snowflake-o"></i></div>
+</div>
+<div id="wb_spaceHeading1" style="display:inline-block;width:100%;z-index:2;">
+<h2 id="spaceHeading1">Lorem ipsum dolor sit amet!</h2>
+</div>
+<div id="wb_spaceHeading2" style="display:inline-block;width:100%;z-index:3;">
+<h2 id="spaceHeading2">Praesent libero. Sed cursus ante dapibus diam.</h2>
+</div>
+<div id="wb_spaceBookmark" style="display:inline-block;width:100%;z-index:4;">
+<a id="spaceBookmark" style="visibility:hidden;">&nbsp;</a>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_facts">
+<div id="facts">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_factsCard1" style="display:flex;width:100%;z-index:5;">
+   <div id="factsCard1-card-body">
+      <div id="factsCard1-card-item0"><i class="fa fa-smile-o"></i></div>
+      <div id="factsCard1-card-item1">Fun!</div>
+      <div id="factsCard1-card-item2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+   </div>
+
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_factsCard2" style="display:flex;width:100%;z-index:6;">
+   <div id="factsCard2-card-body">
+      <div id="factsCard2-card-item0"><i class="fa fa-snowflake-o"></i></div>
+      <div id="factsCard2-card-item1">Snow</div>
+      <div id="factsCard2-card-item2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+   </div>
+
+</div>
+</div>
+</div>
+<div class="col-3">
+<div class="col-3-padding">
+<div id="wb_factsCard3" style="display:flex;width:100%;z-index:7;">
+   <div id="factsCard3-card-body">
+      <div id="factsCard3-card-item0"><i class="fa fa-thermometer-empty"></i></div>
+      <div id="factsCard3-card-item1">Cold...</div>
+      <div id="factsCard3-card-item2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+   </div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Card1" style="display:flex;width:100%;z-index:8;">
+   <div id="Card1-card-body">
+      <div id="Card1-card-item0"><i class="fa fa-smile-o"></i></div>
+      <div id="Card1-card-item1">Fun!</div>
+      <div id="Card1-card-item2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+   </div>
+
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Card2" style="display:flex;width:100%;z-index:9;">
+   <div id="Card2-card-body">
+      <div id="Card2-card-item0"><i class="fa fa-snowflake-o"></i></div>
+      <div id="Card2-card-item1">Snow</div>
+      <div id="Card2-card-item2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+   </div>
+
+</div>
+</div>
+</div>
+<div class="col-3">
+<div class="col-3-padding">
+<div id="wb_Card3" style="display:flex;width:100%;z-index:10;">
+   <div id="Card3-card-body">
+      <div id="Card3-card-item0"><i class="fa fa-thermometer-empty"></i></div>
+      <div id="Card3-card-item1">Cold...</div>
+      <div id="Card3-card-item2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+   </div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_social">
+<div id="social">
+<div class="row">
+<div class="col-1">
+<div id="wb_socialIcon1" style="display:inline-block;width:40px;height:40px;text-align:center;z-index:11;">
+<a href="./index.html"><div id="socialIcon1"><i class="fa fa-facebook"></i></div></a>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_socialIcon2" style="display:inline-block;width:40px;height:40px;text-align:center;z-index:12;">
+<a href="./index.html"><div id="socialIcon2"><i class="fa fa-instagram"></i></div></a>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_socialIcon4" style="display:inline-block;width:40px;height:40px;text-align:center;z-index:13;">
+<a href="./index.html"><div id="socialIcon4"><i class="fa fa-youtube"></i></div></a>
+</div>
+</div>
+<div class="col-4">
+<div id="wb_socialIcon3" style="display:inline-block;width:40px;height:40px;text-align:center;z-index:14;">
+<a href="./index.html"><div id="socialIcon3"><i class="fa fa-whatsapp"></i></div></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid8">
+<div id="LayoutGrid8">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text16">
+<span style="color:#000000;">Copyright © 2018 WYSIWYG Web Builder.&nbsp; All Rights Reserved</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

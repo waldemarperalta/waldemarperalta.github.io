@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 14 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="meucumbu.css" rel="stylesheet">
+<link href="inicialuser.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="affix.min.js"></script>
+<script src="scrollspy.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("#wb_ResponsiveMenu1").affix({offset:{top: $("#wb_ResponsiveMenu1").offset().top}});
+   $("#wb_ResponsiveMenu1 ul li a").click(function(event)
+   {
+      $("#wb_ResponsiveMenu1 input").prop("checked", false);
+   });
+   $("a[href*='#footer']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_footer').offset().top }, 600, 'easeOutSine');
+   });
+});
+</script>
+</head>
+<body data-spy="scroll">
+<div id="wb_LayoutGrid1">
+<header id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_ResponsiveMenu1" style="display:inline-block;width:100%;z-index:0;">
+<label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">MK<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
+<input type="checkbox" id="ResponsiveMenu1-submenu">
+<ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
+<li><a role="menuitem" href="#LayoutGrid2"><i class="fa fa-home fa-2x">&nbsp;</i><br>Home</a></li>
+<li><a role="menuitem" href="#LayoutGrid4"><i class="fa fa-money fa-2x">&nbsp;</i><br>Novo&nbsp;</a></li>
+<li>
+<label for="ResponsiveMenu1-submenu-0" class="toggle"><i class="fa fa-gears fa-2x">&nbsp;</i>Gastos&nbsp;Detalhados<b class="arrow-down"></b></label>
+<a role="menuitem" href="#footer"><i class="fa fa-gears fa-2x">&nbsp;</i><br>Gastos&nbsp;Detalhados<b class="arrow-down"></b></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-0">
+<ul role="menu">
+<li><a role="menuitem" href="http://">Diarios</a></li>
+<li><a role="menuitem" href="http://">Semanais</a></li>
+<li><a role="menuitem" href="http://">Mensais</a></li>
+<li><a role="menuitem" href="http://">Anuais</a></li>
+</ul>
+</li>
+<li><a role="menuitem" href="#"><i class="fa fa-file-text fa-2x">&nbsp;</i><br>Dicas</a></li>
+<li><a role="menuitem" href="#"><i class="fa fa-sign-in fa-2x">&nbsp;</i><br>Sign-in</a></li>
+<li><a role="menuitem" href="http://"><i class="fa fa-comment fa-2x">&nbsp;</i><br>Perguntas&nbsp;Frequentes</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</header>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading1" style="display:inline-block;width:100%;z-index:1;">
+<h1 id="Heading1">Últimos Relatórios</h1>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text1">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Double click to editLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_footer">
+<div id="footer-overlay"></div>
+<div id="footer">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text9">
+<span style="color:#FFFFFF;"><strong>CONTACTOS</strong></span>
+</div>
+<div id="wb_Text10">
+<span style="color:#FFFFFF;"><strong>Email</strong>: meukumbu@hotmail.com<br><br><strong>Phone</strong>: +244 900 000 000<br><br><strong>Website</strong>:</span>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text3">
+<span style="color:#FFFFFF;"><strong>NAVEGAÇÃO</strong></span>
+</div>
+<div id="wb_CssMenu2" style="display:inline-block;width:100%;z-index:6;">
+<ul role="menubar">
+<li class="firstmain"><a role="menuitem" href="#" target="_self">Home</a>
+</li>
+<li><a role="menuitem" href="#" target="_self">Boas&nbsp;vindas</a>
+</li>
+<li><a role="menuitem" href="#" target="_self">Ideia</a>
+</li>
+<li><a role="menuitem" href="#" target="_self">Objectivo</a>
+</li>
+<li><a role="menuitem" href="#" target="_self">Dicas</a>
+</li>
+</ul>
+
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Text5">
+<span style="color:#FFFFFF;"><strong>Compartilhar</strong></span>
+</div>
+<div id="wb_CssMenu5" style="display:inline-block;width:100%;z-index:8;">
+<ul role="menubar">
+<li class="firstmain"><a role="menuitem" href="#" target="_self">Facebook</a>
+</li>
+<li><a role="menuitem" href="#" target="_self">Instagram</a>
+</li>
+<li><a role="menuitem" href="#" target="_self">YouTube</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

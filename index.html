@@ -13,7 +13,7 @@
 <script src="affix.min.js"></script>
 <script src="scrollspy.min.js"></script>
 <script src="jquery-ui.min.js"></script>
-<script src="wwb14.min.js"></script>
+<script src="wb.parallax.min.js"></script>
 <script>
 $(document).ready(function()
 {
@@ -61,6 +61,22 @@ $(document).ready(function()
    {
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#FlexContainer2').offset().top }, 600, 'easeOutSine');
+   });
+   $('#wb_LayoutGrid6').parallax();
+   $("a[href*='#spaceGrid']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_spaceGrid').offset().top }, 600, 'linear');
+   });
+   $("a[href*='#facts']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_facts').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#contact']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_contact').offset().top-88 }, 600, 'easeOutCirc');
    });
    $("a[href*='#footer']").click(function(event)
    {
@@ -130,38 +146,24 @@ $(document).ready(function()
 </script>
 </head>
 <body data-spy="scroll">
-<div id="wb_LayoutGrid1">
-<header id="LayoutGrid1">
-<div class="row">
-<div class="col-1">
-<div id="wb_ResponsiveMenu1" style="display:inline-block;width:100%;z-index:0;">
-<label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">MK<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
-<input type="checkbox" id="ResponsiveMenu1-submenu">
-<ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
-<li><a role="menuitem" href="#LayoutGrid2"><i class="fa fa-home fa-2x">&nbsp;</i><br>Home</a></li>
-<li><a role="menuitem" href="#services"><i class="fa fa-thumb-tack fa-2x">&nbsp;</i><br>Ideia</a></li>
-<li><a role="menuitem" href="#LayoutGrid4"><i class="fa fa-comment fa-2x">&nbsp;</i><br>Objectivo</a></li>
-<li><a role="menuitem" href="#skills"><i class="fa fa-pie-chart fa-2x">&nbsp;</i><br>MK</a></li>
-<li><a role="menuitem" href="#"><i class="fa fa-file-text fa-2x">&nbsp;</i><br>Dicas</a></li>
-<li><a role="menuitem" href="#"><i class="fa fa-sign-in fa-2x">&nbsp;</i><br>Sign-in</a></li>
-<li><a role="menuitem" href="#footer"><i class="fa fa-gears fa-2x">&nbsp;</i><br>Sobre</a></li>
-</ul>
-
-</div>
-</div>
-</div>
-</header>
-</div>
 <div id="wb_LayoutGrid2">
 <div id="LayoutGrid2">
 <div class="row">
 <div class="col-1">
-<div id="wb_JavaScript2" style="display:inline-block;width:100%;z-index:1;">
-<div style="color:#FFFFFF;font-size:36px;font-family:Arial;font-weight:bold;font-style:normal;text-align:center;text-decoration:none" id="typewriter-deluxe">
-<span id="typewriter-text" style="border-right: 0.08em solid #FFFFFF;"></span>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid3">
+<nav id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div id="wb_JavaScript2" style="display:inline-block;width:100%;z-index:0;">
+<div style="color:#000000;font-size:36px;font-family:Arial;font-weight:bold;font-style:normal;text-align:center;text-decoration:none" id="typewriter-deluxe">
+<span id="typewriter-text" style="border-right: 0.08em solid #000000;"></span>
 </div>
 <script>
-var data = "MEU KUMBÚ^uma solução a nivel tecnologico...^Created ";
+var data = "MEU KUMBÚ";
 var lines = data.split('^');
 var reverse = false;
 var index = 0;
@@ -180,7 +182,7 @@ function typeWriterDeluxe()
       text = line.substring(0, text.length + 1);
    }
    typeWriterElement.innerHTML = text;
-   var timeout = 250 - Math.random() * (250/2);
+   var timeout = 450 - Math.random() * (450/2);
    if (reverse) 
    { 
       timeout /= 2; 
@@ -202,17 +204,6 @@ function typeWriterDeluxe()
 typeWriterDeluxe();
 </script>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid3">
-<nav id="LayoutGrid3">
-<div class="row">
-<div class="col-1">
-<div id="wb_Heading1" style="display:inline-block;width:100%;z-index:2;">
-<h1 id="Heading1">MEU KUMBÚ</h1>
-</div>
 <div id="wb_Text1">
 <span style="color:#000000;font-family:Arial;font-size:19px;line-height:22px;">Olá, seja bem vindo a nossa pagina.<br><br> Como ser humano que somos, acreditamos que&nbsp; todos nós já nos fizemos perguntas,<br> relativas ao nosso dinheiro.<br> Tais como!</span>
 </div>
@@ -224,7 +215,7 @@ typeWriterDeluxe();
 <div id="LayoutGrid5">
 <div class="row">
 <div class="col-1">
-<div id="wb_FontAwesomeIcon3" style="display:inline-block;width:52px;height:47px;text-align:center;z-index:4;">
+<div id="wb_FontAwesomeIcon3" style="display:inline-block;width:52px;height:47px;text-align:center;z-index:2;">
 <a href="#features"><div id="FontAwesomeIcon3"><i class="fa fa-chevron-down"></i></div></a>
 </div>
 </div>
@@ -236,31 +227,41 @@ typeWriterDeluxe();
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
-<div id="wb_Heading2" style="display:inline-block;width:100%;z-index:5;">
+<div id="wb_Heading2" style="display:inline-block;width:100%;z-index:3;">
 <h2 id="Heading2">Quanto tenho gasto?</h2>
 </div>
-<div id="wb_FontAwesomeIcon4" style="display:inline-block;width:88px;height:73px;text-align:center;z-index:6;">
+<div id="wb_FontAwesomeIcon4" style="display:inline-block;width:88px;height:73px;text-align:center;z-index:4;">
 <div id="FontAwesomeIcon4"><i class="fa fa-calculator"></i></div>
 </div>
 </div>
 </div>
 <div class="col-2">
 <div class="col-2-padding">
-<div id="wb_Heading3" style="display:inline-block;width:100%;z-index:7;">
+<div id="wb_Heading3" style="display:inline-block;width:100%;z-index:5;">
 <h2 id="Heading3">Com o que tenho gasto?</h2>
 </div>
-<div id="wb_FontAwesomeIcon2" style="display:inline-block;width:88px;height:73px;text-align:center;z-index:8;">
+<div id="wb_FontAwesomeIcon2" style="display:inline-block;width:88px;height:73px;text-align:center;z-index:6;">
 <div id="FontAwesomeIcon2"><i class="fa fa-pie-chart"></i></div>
 </div>
 </div>
 </div>
 <div class="col-3">
 <div class="col-3-padding">
-<div id="wb_Heading4" style="display:inline-block;width:100%;z-index:9;">
-<h2 id="Heading4">Como tenho gasto?</h2>
+<div id="wb_Heading1" style="display:inline-block;width:100%;z-index:7;">
+<h2 id="Heading1">Como tenho gasto?</h2>
 </div>
-<div id="wb_FontAwesomeIcon1" style="display:inline-block;width:88px;height:73px;text-align:center;z-index:10;">
-<div id="FontAwesomeIcon1"><i class="fa fa-line-chart"></i></div>
+<div id="wb_FontAwesomeIcon1" style="display:inline-block;width:88px;height:73px;text-align:center;z-index:8;">
+<div id="FontAwesomeIcon1"><i class="fa fa-bar-chart"></i></div>
+</div>
+</div>
+</div>
+<div class="col-4">
+<div class="col-4-padding">
+<div id="wb_Heading7" style="display:inline-block;width:100%;z-index:9;">
+<h2 id="Heading7">Onde tenho gastado?</h2>
+</div>
+<div id="wb_FontAwesomeIcon8" style="display:inline-block;width:88px;height:73px;text-align:center;z-index:10;">
+<div id="FontAwesomeIcon8"><i class="fa fa-map-marker"></i></div>
 </div>
 </div>
 </div>
@@ -317,18 +318,15 @@ typeWriterDeluxe();
 </div>
 </div>
 <div id="FlexContainer2">
-<div id="wb_Heading8" style="display:inline-block;z-index:16;">
-<h1 id="Heading8">Relatórios</h1>
-</div>
-<label for="" id="Label4" style="display:block;height:28px;height:28px;line-height:20px;z-index:17;">HTML/CSS:</label>
+<label for="" id="Label4" style="display:block;height:28px;height:28px;line-height:20px;z-index:16;">Usuários</label>
 <div id="Progressbar4"  style="display:inline-block;height:20px;position:relative;">
 <div id="Progressbar4-label">90%</div>
 </div>
-<label for="" id="Label8" style="display:block;height:28px;height:28px;line-height:20px;z-index:19;">UI Design:</label>
+<label for="" id="Label8" style="display:block;height:28px;height:28px;line-height:20px;z-index:18;">Usuários activos</label>
 <div id="Progressbar5"  style="display:inline-block;height:20px;position:relative;">
 <div id="Progressbar5-label">80%</div>
 </div>
-<label for="" id="Label9" style="display:block;height:28px;height:28px;line-height:20px;z-index:21;">jQuery:</label>
+<label for="" id="Label9" style="display:block;height:28px;height:28px;line-height:20px;z-index:20;">Conteúdos visualizados</label>
 <div id="Progressbar6"  style="display:inline-block;height:20px;position:relative;">
 <div id="Progressbar6-label">60%</div>
 </div>
@@ -338,10 +336,104 @@ typeWriterDeluxe();
 <div id="LayoutGrid6">
 <div class="row">
 <div class="col-1">
-<input type="submit" id="about-button" onclick="$('html, body').stop().animate({ scrollTop: $('#wb_services').offset().top }, 600, 'easeOutSine');return false;" onmousemove="SetStyle('about-button', 'CustomStyle');return false;" name="" value="Abrir App" style="display:inline-block;width:156px;height:37px;z-index:24;cursor:pointer">
+<div id="wb_Heading4" style="display:inline-block;width:100%;z-index:23;">
+<h1 id="Heading4">USAR APLICATIVO</h1>
 </div>
 </div>
 </div>
+</div>
+</div>
+<div id="wb_LayoutGrid9">
+<div id="LayoutGrid9">
+<div class="row">
+<div class="col-1">
+<hr id="Line1" style="display:block;width: 100%;z-index:24;">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_spaceGrid">
+<div id="spaceGrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_spaceHeading1" style="display:inline-block;width:100%;z-index:25;">
+<h2 id="spaceHeading1">DICAS</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_facts">
+<div id="facts">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_factsCard1" style="display:flex;width:100%;z-index:26;">
+   <div id="factsCard1-card-body">
+      <div id="factsCard1-card-item0"><i class="fa fa-smile-o"></i></div>
+      <div id="factsCard1-card-item1">Fun!</div>
+      <div id="factsCard1-card-item2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+   </div>
+
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_factsCard2" style="display:flex;width:100%;z-index:27;">
+   <div id="factsCard2-card-body">
+      <div id="factsCard2-card-item0"><i class="fa fa-snowflake-o"></i></div>
+      <div id="factsCard2-card-item1">Snow</div>
+      <div id="factsCard2-card-item2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+   </div>
+
+</div>
+</div>
+</div>
+<div class="col-3">
+<div class="col-3-padding">
+<div id="wb_factsCard3" style="display:flex;width:100%;z-index:28;">
+   <div id="factsCard3-card-body">
+      <div id="factsCard3-card-item0"><i class="fa fa-thermometer-empty"></i></div>
+      <div id="factsCard3-card-item1">Cold...</div>
+      <div id="factsCard3-card-item2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+   </div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_contact">
+<form name="contact" method="post" action="mailto:yourname@yourdomain.com" enctype="text/plain" id="contact">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_contactHeading1" style="display:inline-block;width:100%;z-index:29;">
+<h2 id="contactHeading1">Alguma Pergunta? <br></h2>
+</div>
+<div id="wb_contactText1">
+<span style="color:#4F4F4F;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh</span>
+</div>
+<div id="wb_contactIcon1" style="display:inline-block;width:64px;height:64px;text-align:center;z-index:31;">
+<div id="contactIcon1"><i class="fa fa-envelope-o"></i></div>
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<label for="JavaScript2" id="Label1" style="display:block;width:100%;z-index:32;">Name</label>
+<input type="text" id="editboxName" style="display:block;width: 100%;height:34px;z-index:33;" name="Editbox1" value="" spellcheck="false">
+<label for="LayoutGrid8" id="Label2" style="display:block;width:100%;z-index:34;">Email</label>
+<input type="text" id="editboxEmail" style="display:block;width: 100%;height:34px;z-index:35;" name="email" value="" spellcheck="false">
+<label for="contact" id="Label3" style="display:block;width:100%;z-index:36;">Message</label>
+<textarea name="message" id="editboxMessage" style="display:block;width: 100%;;height:100px;z-index:37;" rows="4" cols="61" spellcheck="false"></textarea>
+<input type="submit" id="Button1" name="" value="Enviar" style="display:inline-block;width:92px;height:39px;z-index:38;">
+</div>
+</div>
+</div>
+</form>
 </div>
 <div id="wb_footer">
 <div id="footer-overlay"></div>
@@ -351,22 +443,22 @@ typeWriterDeluxe();
 <div id="wb_Text11">
 <span style="color:#FFFFFF;"><strong>EQUIPA</strong></span>
 </div>
-<div id="wb_Card5" style="display:flex;width:100%;z-index:26;">
+<div id="wb_Card5" style="display:flex;width:100%;z-index:40;">
    <div id="Card5-card-body">
-      <img id="Card5-card-item0" src="images/perfil.PNG" alt="" title="">
-      <div id="Card5-card-item1">John Jones</div>
-      <div id="Card5-card-item2">Developer</div>
+      <img id="Card5-card-item0" src="images/sem3 nome.png" alt="" title="">
+      <div id="Card5-card-item1">Flávio Geremias</div>
+      <div id="Card5-card-item2">Desenvolvedor</div>
       <div id="Card5-card-item3"><i class="fa fa-facebook"></i></div>
       <div id="Card5-card-item4"><i class="fa fa-envelope"></i></div>
       <div id="Card5-card-item5"><i class="fa fa-phone"></i></div>
    </div>
 
 </div>
-<div id="wb_Card4" style="display:flex;width:100%;z-index:27;">
+<div id="wb_Card4" style="display:flex;width:100%;z-index:41;">
    <div id="Card4-card-body">
       <img id="Card4-card-item0" src="UUVI7064.jpeg" alt="" title="">
       <div id="Card4-card-item1">Valdemar Lemos</div>
-      <div id="Card4-card-item2">Developer</div>
+      <div id="Card4-card-item2">Desenvolvedor</div>
       <div id="Card4-card-item3">Designer</div>
       <div id="Card4-card-item4"><i class="fa fa-facebook"></i></div>
       <div id="Card4-card-item5"><i class="fa fa-envelope"></i></div>
@@ -387,7 +479,7 @@ typeWriterDeluxe();
 <div id="wb_Text3">
 <span style="color:#FFFFFF;"><strong>NAVEGAÇÃO</strong></span>
 </div>
-<div id="wb_CssMenu2" style="display:inline-block;width:100%;z-index:31;">
+<div id="wb_CssMenu2" style="display:inline-block;width:100%;z-index:45;">
 <ul role="menubar">
 <li class="firstmain"><a role="menuitem" href="#" target="_self">Home</a>
 </li>
@@ -407,7 +499,7 @@ typeWriterDeluxe();
 <div id="wb_Text5">
 <span style="color:#FFFFFF;"><strong>FOLLOW US</strong></span>
 </div>
-<div id="wb_CssMenu5" style="display:inline-block;width:100%;z-index:33;">
+<div id="wb_CssMenu5" style="display:inline-block;width:100%;z-index:47;">
 <ul role="menubar">
 <li class="firstmain"><a role="menuitem" href="#" target="_self">Facebook</a>
 </li>
@@ -415,6 +507,47 @@ typeWriterDeluxe();
 </li>
 <li><a role="menuitem" href="#" target="_self">YouTube</a>
 </li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid8">
+<div id="LayoutGrid8">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text16">
+<span style="color:#000000;">Copyright © 2018 WYSIWYG Web Builder.&nbsp; All Rights Reserved</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid10">
+<div id="LayoutGrid10">
+<div class="row">
+<div class="col-1">
+<div id="wb_FontAwesomeIcon7" style="display:inline-block;width:88px;height:60px;text-align:center;z-index:49;">
+<div id="FontAwesomeIcon7"><i class="fa fa-line-chart"></i></div>
+</div>
+<div id="wb_Heading5" style="display:inline-block;width:100%;z-index:50;">
+<h1 id="Heading5">Meu Kumbú</h1>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_ResponsiveMenu1" style="display:inline-block;width:100%;z-index:51;">
+<label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title"><span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
+<input type="checkbox" id="ResponsiveMenu1-submenu">
+<ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
+<li><a role="menuitem" href="#LayoutGrid2"><i class="fa fa-home fa-2x">&nbsp;</i><br>Home</a></li>
+<li><a role="menuitem" href="#services"><i class="fa fa-thumb-tack fa-2x">&nbsp;</i><br>Ideia</a></li>
+<li><a role="menuitem" href="#LayoutGrid4"><i class="fa fa-check fa-2x">&nbsp;</i><br>Objectivo</a></li>
+<li><a role="menuitem" href="#skills"><i class="fa fa-power-off fa-2x">&nbsp;</i><br>Aplicativo</a></li>
+<li><a role="menuitem" href="#spaceGrid"><i class="fa fa-file-text fa-2x">&nbsp;</i><br>Dicas</a></li>
+<li><a role="menuitem" href="./login.html"><i class="fa fa-sign-in fa-2x">&nbsp;</i><br>Sign-in</a></li>
+<li><a role="menuitem" href="#footer"><i class="fa fa-tags fa-2x">&nbsp;</i><br>Sobre</a></li>
 </ul>
 
 </div>
