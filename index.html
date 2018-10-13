@@ -1,9 +1,8 @@
 <!doctype html>
-<html>
+<html lang="pt-br" Xmanifest="appcache.manifest">
 <head>
 <meta charset="utf-8">
-<title>Untitled Page</title>
-<meta name="generator" content="WYSIWYG Web Builder 14 - http://www.wysiwygwebbuilder.com">
+<title>Meu Kumbú</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="base/jquery-ui.min.css" rel="stylesheet">
 <link href="font-awesome.min.css" rel="stylesheet">
@@ -13,6 +12,27 @@
 <script src="scrollspy.min.js"></script>
 <script src="jquery-ui.min.js"></script>
 <script src="wb.parallax.min.js"></script>
+<link rel="manifest" href="manifest.json">
+
+<!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Percent">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon-precomposed" href="images/icon.png">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/icon.png">
+    <meta name="theme-color" content="#F77F00">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="imgas/icon.png">
+    <meta name="msapplication-TileColor" content="#F77F00">
+     <script>
+    if (window.location.protocol != "https:" && window.location.hostname == "waldemarperalta.github.io")
+        window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+    </script>
+
 <script>
 $(document).ready(function()
 {
@@ -365,7 +385,7 @@ typeWriterDeluxe();
 <div id="wb_factsCard1" style="display:flex;width:100%;z-index:25;">
    <div id="factsCard1-card-body">
       <div id="factsCard1-card-item0"><i class="fa fa-smile-o"></i></div>
-      <div id="factsCard1-card-item1">Fun!</div>
+      <div id="factsCard1-card-item1">DICA 1</div>
       <div id="factsCard1-card-item2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
    </div>
 
@@ -376,8 +396,8 @@ typeWriterDeluxe();
 <div class="col-2-padding">
 <div id="wb_factsCard2" style="display:flex;width:100%;z-index:26;">
    <div id="factsCard2-card-body">
-      <div id="factsCard2-card-item0"><i class="fa fa-snowflake-o"></i></div>
-      <div id="factsCard2-card-item1">Snow</div>
+      <div id="factsCard2-card-item0"><i class="fa fa-coffee"></i></div>
+      <div id="factsCard2-card-item1">DICA 2</div>
       <div id="factsCard2-card-item2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
    </div>
 
@@ -389,7 +409,7 @@ typeWriterDeluxe();
 <div id="wb_factsCard3" style="display:flex;width:100%;z-index:27;">
    <div id="factsCard3-card-body">
       <div id="factsCard3-card-item0"><i class="fa fa-thermometer-empty"></i></div>
-      <div id="factsCard3-card-item1">Cold...</div>
+      <div id="factsCard3-card-item1">DICA 3</div>
       <div id="factsCard3-card-item2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
    </div>
 
