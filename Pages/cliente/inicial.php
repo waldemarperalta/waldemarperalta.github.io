@@ -6,6 +6,8 @@
 
 
 <!doctype html>
+=======
+>>>>>>> 60987cff57892ddbfd24f75e3272ae9d42a01164:index.html
 <html>
 <head>
 <meta charset="utf-8">
