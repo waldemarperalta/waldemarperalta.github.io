@@ -1,7 +1,8 @@
 var files = [
 
         '/files.json',
-        '/index.html',
+        '/index.php',
+        'pages/cliente/pagecliente.php',
         '/index.css',
         '/jquery-1.12.4.min.js',
         '/wb.rotate.min.js',
