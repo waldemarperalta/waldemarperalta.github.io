@@ -1,16 +1,24 @@
 CACHE MANIFEST
 
 CACHE:
-
-				./files.json
-				./index.php
-				./pages/cliente/pagecliente.php
-				./index.css
-				./jquery-1.12.4.min.js
-				./wb.rotate.min.js
-				./wwb11.min.js
-				./manifest.json
-				];
+        ./login.html
+        ./app.html
+        ./criarconta.html
+        ./user.html
+        ./css/index.css
+        ./css/materialize.css
+        ./css/materialize.min.css
+        ./js/functionapp.js
+        ./js/globalfunction.js
+        ./jquery-1.12.4.min.js
+        ./wwb14.min.js
+        ./sw.js
+        ./files.json
+        ./manifest.json
+        ./images/icon.png
+        ./images/angopapo.jpg
+        ./images/foto.jpg
+        ./images/outra.jpg
 
 NETWORK:
 *
