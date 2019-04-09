@@ -1,0 +1,27 @@
+var files = [			
+	"/login.html",
+        "/app.html",
+        "/criarconta.html",
+        "/user.html",
+
+        "/css/index.css",
+        "/css/materialize.css",
+        "/css/materialize.min.css",
+
+        "/js/functionapp.js",
+        "/js/globalfunction.js",
+
+        "/jquery-1.12.4.min.js",
+        "/wwb14.min.js",
+        "/files.json"
+        "/manifest.json",
+
+        "/images/icon.png",
+        "/images/angopapo.jpg",
+        "7/images/foto.jpg",
+        "images/outra.jpg",
+];
+
+
+
+				
