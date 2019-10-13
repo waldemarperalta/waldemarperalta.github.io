@@ -1,0 +1,18 @@
+var files = [
+  "index.html",
+  "manifest.json",
+  "css/main.css",
+  "icons/MaterialIcons-Regular.ttf",
+  "icons/material.css",
+  "img/icon.png",
+  "js/barcode.js",
+  "js/install.js",
+  "js/main.js",
+  "js/pagamento.js",
+  "js/spa.js",
+  "img/icon.png",
+  
+  "js/vendor/jquery.min.js",
+  "js/vendor/materialize-0.97.0.min.js",
+  "js/vendor/quagga.min.js"
+];
