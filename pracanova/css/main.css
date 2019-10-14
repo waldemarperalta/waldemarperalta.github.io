@@ -8,4 +8,33 @@
   }
 
 .corapp{background:  #f2f2f7!important;}
-.card{display:none !important; margin: 4px !important;}
+.card{margin: 4px !important;}
+
+@media only screen and (max-width:320px){
+.card{
+  display: inline !important;
+  height: 48% !important;
+  width: 48% !important;
+  }
+}
+@media only screen and (max-width:425px){
+  .card{
+    display: inline !important;
+    height: 48% !important;
+    width: 48% !important;
+    }
+}
+@media only screen and (max-width:768px){
+  .card{
+    display: inline !important;
+    height: 48% !important;
+    width: 48% !important;
+    }
+}
+@media only screen and (max-width:1024px){
+  .card{
+    display: inline !important;
+    height: 48% !important;
+    width: 48% !important;
+    }
+}
