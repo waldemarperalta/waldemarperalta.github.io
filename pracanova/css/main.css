@@ -53,8 +53,24 @@ IMG.displayed {
 .bg-native {
     background-color: #931000 !important;
 }
+.text-native {
+  color: #931000 !important;
+}
 .titlename{
   color: white;
   font-family: fantasy;
 }
 
+.fa-facebook, .fa-instagram, .fa-phone{
+  color: white;
+}
+.navbar-light .navbar-toggler {
+  border-color:transparent !important;
+}
+.card-body {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  background-color: #cbe0f063;
+}

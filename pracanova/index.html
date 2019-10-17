@@ -29,24 +29,33 @@
         window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
     </script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <div class="barra bg-native"></div>
-<div class="navbar-light bg-native mb-1 pb-2">
+<div class="navbar-light bg-native pb-2">
     <div class="container"> 
         <nav class="navbar navbar-light bg-native ">
             <a class="navbar-brand" href="#">
               <img src="img/icon.png" width="50" height="50" class="d-inline-block align-top" alt="">
                 <span class="h1 titlename">Praça Nova</span>
             </a>
-    
-            <a class="navbar-brand" href="#">Navbar com texto</a>
+            <a class="navbar-brand" href="#">
+              <i class="fa fa-facebook"></i>
+            </a>            
+            <a class="navbar-brand" href="#">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a class="navbar-brand" href="tel:990000000">
+                <i class="fa fa-phone"></i>
+            </a>
     
           </nav>
           <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
               
                 <a class="navbar-brand" href="#"></a>
+                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#textoNavbar" aria-controls="textoNavbar" aria-expanded="false" aria-label="Alterna navegação">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -56,10 +65,10 @@
                       <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Destaques</a>
+                      <a class="nav-link" href="#produtos">Produtos</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Preços</a>
+                      <a class="nav-link" href="#categorias">Categorias</a>
                     </li>
                     <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -77,12 +86,16 @@
                   
                   <form class="form-inline">
                   <input class="form-control mr-sm-8" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                  <button class="btn my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
                 </form>
+                <a class="navbar-brand text-native" href="#"> 
+                  <span>Minha conta</span> 
+                    <i class="fa fa-user-circle"></i>
+                </a>
                 </div>
         </nav>
     </div>
-    </div>
+</div>
 
 
 <div class="bg-red fullcontainer bg-native">
@@ -107,8 +120,7 @@
 </div>
 <div class="container">
         
-
-<div class="corpo ">
+<div class="produtos" id="produtos">
                 
 
 
@@ -152,40 +164,45 @@
   </div>
 
 </div>
+</div>
 
 
-      </div>
-      <div class="container">
-          <nav class="navbar text-center">
-              <h3>Cabeçalho exemplo <span class="badge badge-secondary">Novo</span></h3>
+      <div class="container" id="categorias">
+          <nav class="navbar Text-Center">
+              <h2>Categorias<span class="badge badge-secondary">Novo</span></h2>
             </nav>
-            <div class="wrapper">
-              <div class="one">      
-                <img class="card-img-top" src="img/icon.png" alt="Imagem de capa do card">
-              </div>
-              <div class="two">
-                  <img class="card-img-top" src="img/icon.png" alt="Imagem de capa do card">
+           <div>
 
-              </div>
-              <div class="three">
-                  <img class="card-img-top" src="img/icon.png" alt="Imagem de capa do card">
+              <div class="row">
+                  <div class="col s1">1</div>
+                  <div class="col s1">2</div>
+                  <div class="col s1">3</div>
+                  <div class="col s1">4</div>
+                  <div class="col s1">5</div>
+                  <div class="col s1">6</div>
+                  <div class="col s1">7</div>
+                  <div class="col s1">8</div>
+                  <div class="col s1">9</div>
+                  <div class="col s1">10</div>
+                  <div class="col s1">11</div>
+                  <div class="col s1">12</div>
+                </div>
+              <div class="row">
 
-              </div>
-              <div class="four">
-                  <img class="card-img-top" src="img/icon.png" alt="Imagem de capa do card">
-
-              </div>
-              <div class="five">
-                  <img class="card-img-top" src="img/icon.png" alt="Imagem de capa do card">
-
-              </div>
-              <div class="six">
-                      <img class="card-img-top" src="img/icon.png" alt="Imagem de capa do card">
-
-              </div>
-            </div>
-
-
+                  <div class="col s4">
+                      <div class="card ">
+                          <img class="card-img-top"    src="img/icon.png" alt="Imagem de capa do card">
+                        </div>                  </div>
+                  <div class="col s4">
+                    <!-- Promo Content 2 goes here -->
+                  </div>
+                  <div class="col s4">
+                    <!-- Promo Content 3 goes here -->
+                  </div>
+            
+                </div>
+                      
+           </div>
       </div>
 
 
