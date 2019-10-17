@@ -33,7 +33,7 @@
 </head>
 <body>
 <div class="barra bg-native"></div>
-<div class="navbar-light bg-native">
+<div class="navbar-light bg-native mb-1 pb-2">
     <div class="container"> 
         <nav class="navbar navbar-light bg-native ">
             <a class="navbar-brand" href="#">
@@ -41,58 +41,51 @@
                 <span class="h1 titlename">Praça Nova</span>
             </a>
     
- 
-            <form class="form-inline view">
-              <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-            </form>           
-            
-            <nav class="navbar navbar-expand-lg navbar-light"> 
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#textoNavbar" aria-controls="textoNavbar" aria-expanded="false" aria-label="Alterna navegação">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            </nav>
+            <a class="navbar-brand" href="#">Navbar com texto</a>
+    
           </nav>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+              
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#textoNavbar" aria-controls="textoNavbar" aria-expanded="false" aria-label="Alterna navegação">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="textoNavbar">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Destaques</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Preços</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Link dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="#">Ação</a>
+                              <a class="dropdown-item" href="#">Outra ação</a>
+                              <a class="dropdown-item" href="#">Algo mais aqui</a>
+                            </div>
+                          </li>
+                  </ul>
+                  <span class="navbar-text">
+                  </span>
+                  
+                  <form class="form-inline">
+                  <input class="form-control mr-sm-8" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                </form>
+                </div>
+        </nav>
     </div>
     </div>
-    <div class="navbar-light bg-light">
-      <div class="container"> 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
-                
-                  <a class="navbar-brand" href="#"></a>
-                  <div class="collapse navbar-collapse" id="textoNavbar">
-                    <ul class="navbar-nav mr-auto">
-                      <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Destaques</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Preços</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Link dropdown
-                              </a>
-                              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Ação</a>
-                                <a class="dropdown-item" href="#">Outra ação</a>
-                                <a class="dropdown-item" href="#">Algo mais aqui</a>
-                              </div>
-                            </li>
-                    </ul>
-                    <span class="navbar-text">
-                    </span>
-                    
-                    <form class="form-inline">
-                    <input class="form-control mr-sm-4" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-                  </form>
-                  </div>
-          </nav>
-      </div>
 
-<div class="bg-red fullcontainer">
+
+<div class="bg-red fullcontainer bg-native">
 <div class=" d-inline-block w-100 h-50">
                       <div class="carosel">
                           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -166,7 +159,31 @@
           <nav class="navbar text-center">
               <h3>Cabeçalho exemplo <span class="badge badge-secondary">Novo</span></h3>
             </nav>
+            <div class="wrapper">
+              <div class="one">      
+                <img class="card-img-top" src="img/icon.png" alt="Imagem de capa do card">
+              </div>
+              <div class="two">
+                  <img class="card-img-top" src="img/icon.png" alt="Imagem de capa do card">
 
+              </div>
+              <div class="three">
+                  <img class="card-img-top" src="img/icon.png" alt="Imagem de capa do card">
+
+              </div>
+              <div class="four">
+                  <img class="card-img-top" src="img/icon.png" alt="Imagem de capa do card">
+
+              </div>
+              <div class="five">
+                  <img class="card-img-top" src="img/icon.png" alt="Imagem de capa do card">
+
+              </div>
+              <div class="six">
+                      <img class="card-img-top" src="img/icon.png" alt="Imagem de capa do card">
+
+              </div>
+            </div>
 
 
       </div>
