@@ -16,25 +16,44 @@
   height: 48% !important;
   width: 48% !important;
   }
+  .container {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
 }
+
+}
+
 @media only screen and (max-width:425px){
-  .card{
-    display: inline !important;
-    height: 48% !important;
-    width: 48% !important;
-    }
+
 }
 @media only screen and (max-width:768px){
-  .card{
-    display: inline !important;
-    height: 48% !important;
-    width: 48% !important;
-    }
+
 }
 @media only screen and (max-width:1024px){
-  .card{
-    display: inline !important;
-    height: 48% !important;
-    width: 48% !important;
-    }
+
+}
+
+
+.fullcontainer {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+IMG.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto 
+}
+.bg-native {
+    background-color: #931000 !important;
+}
+.titlename{
+  color: white;
+  font-family: fantasy;
 }
