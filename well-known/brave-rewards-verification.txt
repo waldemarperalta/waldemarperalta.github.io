@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: waldemarperalta.github.io
+Token: 51de4fb178b0603b4f0e055fa1ccf3725be58f14e7fe235de47b5adf32573f7c
