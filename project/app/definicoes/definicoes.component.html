@@ -1,0 +1,64 @@
+<div class="text-center nav-title corapp">
+    <span class="black-text font-mes font-weight-bold bg-text">  Dedifições </span><br>  
+    <i class="material-icons black-text font-mes font-weight-bold">settings</i> 
+
+  </div>
+
+<div  class="inicio animated fadeIn">
+
+  <div  class=" collection">
+
+  <a class="collection-item" data-toggle="modal" data-target="#meta">
+      <i class="material-icons">person</i>User <span class="float-right"><i class="material-icons" (click)="dropDef('1')" >expand_more</i></span>
+      <ul class="collection " id="1">
+          <li>
+            <div class="collapsible-header"><i class="material-icons">chat_bubble</i>First</div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+          </li>
+        </ul>
+  </a>
+
+  <a  class="collection-item">
+      <i class="material-icons">credit_card</i>Contas<span class="float-right"  (click)="dropDef('2')"><i class="material-icons">expand_more</i></span>
+      <ul class="collection " id="2">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">chat_bubble</i>First</div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+        </li>
+      </ul>
+  </a>
+
+  <a class="collection-item">
+      <i class="material-icons">settings_applications</i>App <span class="float-right"  (click)="dropDef('3')"><i class="material-icons">expand_more</i></span>
+      <ul class="collection " id="3">
+        <li>
+          <div class="collapsible-header">color</div>
+        </li>
+        <li>
+          <div class="collapsible-header">Mair</div>
+        </li>
+      </ul>
+  </a>
+
+
+<div class=" text-center ">
+  <a (click)="SaveDefinicoes();" class="btn-floating btn-large corapp"><i class="material-icons" style="vertical-align: baseline; margin: inherit;">save</i></a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+<div class=" fixed-action-btn-left">
+    <a   (click)="callTab('/main')" class="text-Black">
+      <i class="material-icons tamanho" >chevron_left</i>
+    </a>
+</div>
+
