@@ -1,17 +1,72 @@
-var audio = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/Lecrae_-_Anomaly_(Lyric_Video).mp3');
-audio.volume = 0.1;
-audio.autoplay = true;
+console.clear();
 
-$('.trigger').click(function() {
-    if (audio.paused == false) {
-        audio.pause();
-        $('.fa-play').show();
-        $('.fa-pause').hide();
-        $('.music-card').removeClass('playing');
-    } else {
-        audio.play();
-        $('.fa-pause').show();
-        $('.fa-play').hide();
-        $('.music-card').addClass('playing');
+// instigate our audio context
+
+// for cross browser
+const AudioContext = window.AudioContext || window.webkitAudioContext;
+let audioCtx;
+
+// load some sound
+const audioElement = document.querySelector('audio');
+let track;
+
+const playButton = document.querySelector('.tape-controls-play');
+
+// play pause audio
+playButton.addEventListener('click', function() {
+    if (!audioCtx) {
+        init();
     }
-});
+
+    // check if context is in suspended state (autoplay policy)
+    if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+    }
+
+    if (this.dataset.playing === 'false') {
+        audioElement.play();
+        this.dataset.playing = 'true';
+        // if track is playing pause it
+    } else if (this.dataset.playing === 'true') {
+        audioElement.pause();
+        this.dataset.playing = 'false';
+    }
+
+    let state = this.getAttribute('aria-checked') === "true" ? true : false;
+    this.setAttribute('aria-checked', state ? "false" : "true");
+
+}, false);
+
+// if track ends
+audioElement.addEventListener('ended', () => {
+    playButton.dataset.playing = 'false';
+    playButton.setAttribute("aria-checked", "false");
+}, false);
+
+function init() {
+
+    audioCtx = new AudioContext();
+    track = audioCtx.createMediaElementSource(audioElement);
+
+    // volume
+    const gainNode = audioCtx.createGain();
+
+    const volumeControl = document.querySelector('[data-action="volume"]');
+    volumeControl.addEventListener('input', function() {
+        gainNode.gain.value = this.value;
+    }, false);
+
+    // panning
+    const pannerOptions = {
+        pan: 0
+    };
+    const panner = new StereoPannerNode(audioCtx, pannerOptions);
+
+    const pannerControl = document.querySelector('[data-action="panner"]');
+    pannerControl.addEventListener('input', function() {
+        panner.pan.value = this.value;
+    }, false);
+
+    // connect our graph
+    track.connect(gainNode).connect(panner).connect(audioCtx.destination);
+}
