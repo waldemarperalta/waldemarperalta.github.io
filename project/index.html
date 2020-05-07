@@ -30,6 +30,44 @@
 
     </div>
 
+
+    <div id="boombox" style="display: none;">
+        <div class="boombox-handle"></div>
+
+        <div class="boombox-body">
+
+            <section class="master-controls">
+                <input type="range" id="volume" class="control-volume" min="0" max="2" value="1" list="gain-vals" step="0.01" data-action="volume" />
+                <datalist id="gain-vals">
+					<option value="0" label="min">
+					<option value="2" label="max">
+				</datalist>
+                <label for="volume">VOL</label>
+
+                <input type="range" id="panner" class="control-panner" list="pan-vals" min="-1" max="1" value="0" step="0.01" data-action="panner" />
+                <datalist id="pan-vals">
+					<option value="-1" label="left">
+					<option value="1" label="right">
+				</datalist>
+                <label for="panner">PAN</label>
+
+                <button class="control-power" role="switch" aria-checked="false" data-power="on">
+					<span>On/Off</span>
+				</button>
+            </section>
+
+            <section class="tape">
+
+
+
+                <!-- 			type="audio/mpeg" -->
+
+
+            </section>
+
+        </div>
+        <!-- boombox-body -->
+    </div>
     <script>
         console.clear();
 
